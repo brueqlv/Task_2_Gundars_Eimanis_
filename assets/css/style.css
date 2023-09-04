@@ -1,4 +1,12 @@
-
+:root{
+    --font-1:Montserrat;
+    --font-2:Oswald;
+    --background-color-one: #2f4858;
+    --background-color-two: #ffcb66;
+    --button-color: #ffa800;
+    --font-color-one: #fff;
+    --font-color-two: #2f4858;
+}
 
 @font-face {
     font-family: Montserrat;
@@ -56,7 +64,7 @@ header {
 
 .header-links {
     text-decoration: none;
-    font-family: Montserrat;
+    font-family: var(--font-1);
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
@@ -111,13 +119,13 @@ main {
 
 .text-content {
     margin: 0;
-    font-family: Montserrat;
+    font-family: var(--font-1);
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0;
     text-align: center;
-    color: #2f4858
+    color: var(--font-color-two)
 }
 
 .img-container {
@@ -179,23 +187,23 @@ main {
 }
 
 .option-button,.option-heading {
-    font-family: Oswald;
+    font-family: var(--font-2);
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
     letter-spacing: 0;
     text-align: center;
-    color: #2f4858
+    color: var(--font-color-two)
 }
 
 .option-button {
     width: 233px;
     height: 50px;
-    background-color: #ffa800;
+    background-color: var(--button-color);
     border-radius: 25px;
     border: 0;
-    color: #fff;
-    font-family: Montserrat;
+    color: var(--font-color-one);
+    font-family: var(--font-1);
     font-size: 18px;
     line-height: 22px
 }
@@ -207,13 +215,13 @@ main {
 }
 
 .form-heading {
-    font-family: Oswald;
+    font-family: var(--font-2);
     font-size: 30px;
     font-weight: 500;
     line-height: 44px;
     letter-spacing: 0;
     text-align: center;
-    color: #2f4858;
+    color: var(--font-color-two);
     margin-top: 0;
     margin-bottom: 62px
 }
@@ -248,8 +256,8 @@ input::placeholder,textarea::placeholder {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: -.015em;
-    font-family: Montserrat;
-    color: #2f4858
+    font-family: var(--font-1);
+    color: var(--font-color-two)
 }
 
 .input-container {
@@ -263,13 +271,13 @@ input::placeholder,textarea::placeholder {
 }
 
 .textarea-label {
-    font-family: Montserrat;
+    font-family: var(--font-1);
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0;
     text-align: left;
-    color: #2f4858
+    color: var(--font-color-two)
 }
 
 .checkbox-container {
@@ -289,23 +297,23 @@ input[type=checkbox] {
 }
 
 .checkbox-label,.send-button {
-    font-family: Montserrat;
+    font-family: var(--font-1);
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0;
     text-align: left;
-    color: #2f4858
+    color: var(--font-color-two)
 }
 
 .send-button {
     margin-top: 50px;
     width: 182px;
     height: 62px;
-    background-color: #ffa800;
+    background-color: var(--button-color);
     border-radius: 31px;
     border: 0;
-    color: #fff;
+    color: var(--font-color-one);
     font-size: 24px;
     font-weight: 500;
     line-height: 22px;
@@ -323,7 +331,7 @@ input[type=checkbox] {
     align-items: center;
     width: 100%;
     height: 481.59px;
-    background-color: #ffcb66
+    background-color: var(--background-color-two)
 }
 
 .wavy-top {
@@ -339,13 +347,13 @@ input[type=checkbox] {
 .partners-heading {
     margin-top: 100px;
     margin-bottom: 63px;
-    font-family: Oswald;
+    font-family: var(--font-2);
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
     letter-spacing: 0;
     text-align: center;
-    color: #2f4858
+    color: var(--font-color-two)
 }
 
 .partners-container-inner {
@@ -364,7 +372,7 @@ input[type=checkbox] {
 }
 
 footer {
-    background-color: #2f4858;
+    background-color: var(--background-color-one);
     padding: 36px 62px 0
 }
 
@@ -418,10 +426,10 @@ footer {
 }
 
 .footer-bottom-container p,.top-container-inner a,.top-container-inner h4,.top-container-inner h5 {
-    font-family: Montserrat;
+    font-family: var(--font-1);
     font-weight: 500;
     letter-spacing: 0;
-    color: #fff
+    color: var(--font-color-one)
 }
 
 .top-container-inner h5 {
@@ -444,7 +452,7 @@ footer {
 
 .fa {
     font-size: 40px;
-    color: #fff;
+    color: var(--font-color-one);
     height: 36px;
     width: auto;
     padding: 40px 0 52px 29px
@@ -471,7 +479,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: #2f4858;
+    color: var(--font-color-two);
     border: 0;
     border-radius: 50%;
     cursor: pointer;
