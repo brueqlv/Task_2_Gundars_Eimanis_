@@ -109,7 +109,8 @@ main {
     left: 50%;
     transform: translate(-50%,-25%);
     background-color: transparent;
-    padding: 0
+    padding: 0;
+    cursor:pointer
 }
 
 .text-container {
@@ -205,7 +206,8 @@ main {
     color: var(--font-color-one);
     font-family: var(--font-1);
     font-size: 18px;
-    line-height: 22px
+    line-height: 22px;
+    cursor:pointer;
 }
 
 .contact-form {
@@ -317,7 +319,8 @@ input[type=checkbox] {
     font-size: 24px;
     font-weight: 500;
     line-height: 22px;
-    text-align: center
+    text-align: center;
+    cursor:pointer
 }
 
 .partners-container,footer {
