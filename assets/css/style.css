@@ -460,11 +460,11 @@ footer {
 }
 
 @media (max-width:780px) {
-    .header-navbar {
+    .header-navbar,.hide-on-tablet  {
         display: none
     }
 
-    .show-on-tablet-phone {
+    .show-on-tablet-phone,.fa-bars,.show-on-tablet{
         display: block
     }
 
@@ -482,7 +482,6 @@ footer {
     }
 
     .fa-bars {
-        display: block;
         color: #000;
         padding: 17px;
         font-size: 32px
@@ -567,14 +566,6 @@ footer {
         height: 310px
     }
 
-    .hide-on-tablet {
-        display: none
-    }
-
-    .show-on-tablet {
-        display: block
-    }
-
     .top-container-inner a {
         font-weight: 700;
         text-align: right
@@ -617,7 +608,7 @@ footer {
 }
 
 @media (max-width:660px) {
-    .show-on-phone {
+    .show-on-phone,.header-container-inner .fa-close{
         display: block
     }
 
@@ -631,17 +622,14 @@ footer {
     }
 
     .header-container {
-        top: -50px
+        top: -55px
     }
 
     .header-container-inner {
-        top: -48px;
-        left: 2px;
-        right: 0
+        inset: 48px 30px auto 2px;
     }
 
     .header-container-inner .fa-close {
-        display: block;
         color: #000;
         padding: 17px 15px 2px;
         font-size: 32px
@@ -798,14 +786,11 @@ footer {
 
     footer {
         padding: 10px 0 0;
-        height: auto
     }
 
     .footer-top-container {
         flex-direction: column;
         padding: 23px 10px 0 20px;
-        height: auto;
-        width: auto
     }
 
     .footer-img-container {
@@ -837,7 +822,6 @@ footer {
 
     .social-network-container {
         text-align: left;
-        height: auto;
         align-items: flex-start
     }
 
