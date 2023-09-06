@@ -4,6 +4,7 @@
     --background-color-one: #2f4858;
     --background-color-two: #ffcb66;
     --button-color: #ffa800;
+    --button-color-hover:#ffc043;
     --font-color-one: #fff;
     --font-color-two: #2f4858;
 }
@@ -17,7 +18,13 @@
     font-family:Oswald;src:url(../font/Oswald-VariableFont_wght.ttf)
 }
 
+button{
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+button:hover{
+    background-color: var( --button-color-hover);
+}
 
 body {
     position: relative;
@@ -98,16 +105,24 @@ main {
 }
 
 .play-button {
-    background: transparent url(../img/Group\ 2.png) center/145% no-repeat;
-    width: 86px;
-    height: 91px;
+    background-color: var(--button-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 50%;
+    max-width: 86px;
+    max-height: 86px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-25%);
-    padding: 0;
     border: 0;
     cursor:pointer
+}
+.play-button .fa-play{
+    padding:0 0 0 4px;
+    height:auto;
 }
 
 /* Text container styling */
@@ -359,7 +374,6 @@ footer {
 .footer-top-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 .footer-img-container {
@@ -492,7 +506,7 @@ footer {
     }
 
     .play-button {
-        top: 53%
+        top: 55%
     }
 
     .text-container {
@@ -572,7 +586,7 @@ footer {
     }
 
     .footer-top-container {
-        padding: 18px 18px 0 18px
+        padding: 18px 0 0 18px
     }
 
     .footer-img-container {
@@ -627,22 +641,17 @@ footer {
 
     .header-container-inner {
         inset: 48px 30px auto 2px;
+        width:100%
     }
 
     .header-container-inner .fa-close {
         color: #000;
-        padding: 17px 15px 2px;
+        padding: 17px 19px 2px;
         font-size: 32px
     }
 
     .video-container {
         padding-top: 49px
-    }
-
-    .play-button {
-        background-size: cover;
-        width: 70px;
-        height: 70px
     }
 
     .text-container {
@@ -790,7 +799,7 @@ footer {
 
     .footer-top-container {
         flex-direction: column;
-        padding: 23px 10px 0 20px;
+        padding: 23px 0 0 20px;
     }
 
     .footer-img-container {
