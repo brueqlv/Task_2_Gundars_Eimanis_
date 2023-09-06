@@ -48,16 +48,14 @@ header {
 
 .header-container-inner {
     position: absolute;
-    inset: -50px 62px auto 62px;
-    height: 146px;
+    inset: 0 62px auto 62px;
     align-items: flex-end;
     box-sizing: border-box
 }
 
 .header-navbar {
-    height: 45px;
     width: 999px;
-    align-items: flex-start
+    margin-bottom:24px;
 }
 
 .header-logo {
@@ -88,7 +86,6 @@ main {
 
 .footer-img-container img,.img-container-inner img,.partners-container-inner img,.video-container img {
     max-width: 100%;
-    height: auto
 }
 
 /* Video container styling */
@@ -134,13 +131,9 @@ main {
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    max-height: 481.59px;
-    height: auto
 }
 
 .img-container-inner {
-    max-height: 383px;
-    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end
@@ -186,7 +179,6 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 400px;
-    height: 150px
 }
 
 .option-button,.option-heading {
@@ -204,14 +196,13 @@ main {
     color: var(--font-color-one);
     font: 18px/22px var(--font-1);
     cursor:pointer;
+    margin-top:20px;
 }
 
 /* Contact form styling */
 
 .contact-form {
     max-width: 612px;
-    width: 100%;
-    height: auto
 }
 
 .form-heading {
@@ -269,11 +260,9 @@ input::placeholder,textarea::placeholder {
 }
 
 .checkbox-container {
-    width: 100%;
-    height: 39px;
     display: flex;
     align-items: flex-start;
-    margin-top: 30px
+    margin-top: 29px
 }
 
 input[type=checkbox] {
@@ -291,7 +280,7 @@ input[type=checkbox] {
 }
 
 .send-button {
-    margin-top: 50px;
+    margin-top: 55px;
     width: 182px;
     height: 62px;
     background: var(--button-color);
@@ -312,10 +301,10 @@ input[type=checkbox] {
 }
 
 .partners-container {
+    padding-bottom:162px;
     margin-top: 150px;
     align-items: center;
     width: 100%;
-    height: 481.59px;
     background: var(--background-color-two)
 }
 
@@ -371,7 +360,6 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 240px
 }
 
 .footer-img-container {
@@ -395,7 +383,9 @@ footer {
     text-align: left;
     margin-bottom: 22px
 }
-
+.top-container-inner a:last-child{
+    margin-bottom:0;
+} 
 .top-container-inner h4 {
     font: 24px/29px var(--font-1);
     text-align: left;
@@ -419,8 +409,6 @@ footer {
 }
 
 .social-network-container {
-    width: 100%;
-    height: 120px;
     text-align: end
 }
 
@@ -429,22 +417,24 @@ footer {
     color: var(--font-color-one);
     height: 36px;
     width: auto;
-    padding: 40px 0 52px 29px
+    padding: 40px 0 38px 29px
 }
 
 .footer-bottom-container {
     display: flex;
     justify-content: space-between;
-    align-items: end
+    align-items: end;
+    margin-bottom:15px
 }
 
 .footer-bottom-container p {
     font: 14px/17px var(--font-1);
+    margin:0
 }
 
 .footer-left-p {
     max-width: 182px;
-    text-align: left
+    text-align: left;
 }
 
 .scroll-to-top {
@@ -488,7 +478,7 @@ footer {
     }
 
     .header-container-inner {
-        top: -45px
+        top: 20px
     }
 
     .fa-bars {
@@ -526,7 +516,7 @@ footer {
     }
 
     .option-container-inner {
-        height: 170px
+        height: 170px;
     }
 
     .form-heading {
@@ -544,7 +534,7 @@ footer {
     }
 
     .checkbox-container {
-        margin-top: 12px
+        margin-top: 10px;
     }
 
     input[type=checkbox] {
@@ -552,7 +542,8 @@ footer {
     }
 
     .partners-container {
-        margin-top: 105px
+        margin-top: 105px;
+        padding-bottom:0;
     }
 
     .wavy-top {
@@ -590,7 +581,7 @@ footer {
     }
 
     .footer-top-container {
-        padding: 18px
+        padding: 18px 18px 0 18px
     }
 
     .footer-img-container {
@@ -602,12 +593,19 @@ footer {
     }
 
     .details {
-        margin: 47px 37px
+        margin: 47px 37px 5px 37px
     }
 
     .fa {
         font-size: 28px;
         padding: 10px 0 0 27px
+    }
+    .header-container-inner .fa{
+        padding: 0 20px 10px 27px;
+    }
+
+    .footer-bottom-container{
+        padding-top: 20px;
     }
 
     .footer-bottom-container p {
@@ -769,7 +767,7 @@ footer {
     .send-button {
         width: 140px;
         height: 48px;
-        margin-top: 72px;
+        margin-top: 55px;
         font-size: 18px
     }
 
@@ -805,7 +803,7 @@ footer {
 
     .footer-top-container {
         flex-direction: column;
-        padding: 23px 10px 20px 20px;
+        padding: 23px 10px 0 20px;
         height: auto;
         width: auto
     }
@@ -855,7 +853,7 @@ footer {
 
     .footer-bottom-container p {
         padding: 0;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
         font-size: 11px
     }
 }
