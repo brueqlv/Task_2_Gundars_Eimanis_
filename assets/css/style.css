@@ -22,10 +22,6 @@ button{
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover{
-    background-color: var( --button-color-hover);
-}
-
 body {
     position: relative;
     margin: 0
@@ -455,23 +451,40 @@ footer {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     color: var(--font-color-two);
-    border: 0;
     border-radius: 50%;
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
-    z-index: 999
+    z-index: 999;
+    background-color: #e7e7e7;
+
 }
 
 .fa-arrow-up {
-    color: #06060680
+    color: #02020280;
+    padding:0;
 }
 
 .show-on-phone,.show-on-tablet,.show-on-tablet-phone {
     display: none
 }
+
+button:hover{
+    background-color: var( --button-color-hover);
+}
+
+.icon:hover, a:hover {
+    color: var(--button-color-hover);
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+.contact-form .form-input:focus{
+    border:2px solid var(--background-color-two);
+}
+
 
 @media (max-width:780px) {
     .header-navbar,.hide-on-tablet  {
