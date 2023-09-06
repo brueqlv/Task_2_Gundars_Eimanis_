@@ -10,11 +10,11 @@
 
 @font-face {
     font-family: Montserrat;
-    src: url(../font/Montserrat-Regular.ttf)
+    src: url(../font/Montserrat-VariableFont_wght.ttf)
 }
 
 @font-face {
-    font-family:Oswald;src:url(../font/Oswald-Medium.ttf)
+    font-family:Oswald;src:url(../font/Oswald-VariableFont_wght.ttf)
 }
 
 body {
