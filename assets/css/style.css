@@ -17,10 +17,14 @@
     font-family:Oswald;src:url(../font/Oswald-VariableFont_wght.ttf)
 }
 
+
+
 body {
     position: relative;
     margin: 0
 }
+
+/*Styling for header */
 
 .header-container,header {
     position: fixed;
@@ -44,10 +48,8 @@ header {
 
 .header-container-inner {
     position: absolute;
-    top: -50px;
+    inset: -50px 62px auto 62px;
     height: 146px;
-    left: 62px;
-    right: 62px;
     align-items: flex-end;
     box-sizing: border-box
 }
@@ -64,19 +66,17 @@ header {
 
 .header-links {
     text-decoration: none;
-    font-family: var(--font-1);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0;
-    text-align: left;
+    font: 500 18px/22px var(--font-1);
     color: #060606;
+    text-align: left;
     margin-right: 5px
 }
 
 .language-link {
     margin-left: 24px
 }
+
+/* Main styling */
 
 main {
     display: flex;
@@ -86,6 +86,13 @@ main {
     margin: 0
 }
 
+.footer-img-container img,.img-container-inner img,.partners-container-inner img,.video-container img {
+    max-width: 100%;
+    height: auto
+}
+
+/* Video container styling */
+
 .video-container {
     position: relative;
     text-align: center;
@@ -93,25 +100,20 @@ main {
     padding-top: 47px
 }
 
-.footer-img-container img,.img-container-inner img,.partners-container-inner img,.video-container img {
-    max-width: 100%;
-    height: auto
-}
-
 .play-button {
-    background-image: url(../img/Group\ 2.png);
-    background-position: center;
+    background: transparent url(../img/Group\ 2.png) center/145% no-repeat;
     width: 86px;
     height: 91px;
-    border: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-25%);
-    background-color: transparent;
     padding: 0;
+    border: 0;
     cursor:pointer
 }
+
+/* Text container styling */
 
 .text-container {
     max-width: 654px;
@@ -120,14 +122,12 @@ main {
 
 .text-content {
     margin: 0;
-    font-family: var(--font-1);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0;
+    font:400 18px/22px var(--font-1);
     text-align: center;
     color: var(--font-color-two)
 }
+
+/* Img container styling */
 
 .img-container {
     position: relative;
@@ -167,6 +167,8 @@ main {
     bottom: -1px
 }
 
+/* Option container styling */
+
 .option-container {
     margin: 150px 0;
     padding: 0 80px;
@@ -188,11 +190,7 @@ main {
 }
 
 .option-button,.option-heading {
-    font-family: var(--font-2);
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    letter-spacing: 0;
+    font: 500 24px/36px var(--font-2);
     text-align: center;
     color: var(--font-color-two)
 }
@@ -200,15 +198,15 @@ main {
 .option-button {
     width: 233px;
     height: 50px;
-    background-color: var(--button-color);
+    background: var(--button-color);
     border-radius: 25px;
     border: 0;
     color: var(--font-color-one);
-    font-family: var(--font-1);
-    font-size: 18px;
-    line-height: 22px;
+    font: 18px/22px var(--font-1);
     cursor:pointer;
 }
+
+/* Contact form styling */
 
 .contact-form {
     max-width: 612px;
@@ -217,15 +215,10 @@ main {
 }
 
 .form-heading {
-    font-family: var(--font-2);
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 44px;
-    letter-spacing: 0;
+    font:500 30px/44px var(--font-2);
     text-align: center;
     color: var(--font-color-two);
-    margin-top: 0;
-    margin-bottom: 62px
+    margin:0 0 62px;
 }
 
 .form-container {
@@ -254,11 +247,8 @@ main {
 }
 
 input::placeholder,textarea::placeholder {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
+    font: 400 18px/22px var(--font-1);
     letter-spacing: -.015em;
-    font-family: var(--font-1);
     color: var(--font-color-two)
 }
 
@@ -273,11 +263,7 @@ input::placeholder,textarea::placeholder {
 }
 
 .textarea-label {
-    font-family: var(--font-1);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0;
+    font: 400 14px/17px var(--font-1);
     text-align: left;
     color: var(--font-color-two)
 }
@@ -299,11 +285,7 @@ input[type=checkbox] {
 }
 
 .checkbox-label,.send-button {
-    font-family: var(--font-1);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0;
+    font: 400 14px/17px var(--font-1);
     text-align: left;
     color: var(--font-color-two)
 }
@@ -312,16 +294,16 @@ input[type=checkbox] {
     margin-top: 50px;
     width: 182px;
     height: 62px;
-    background-color: var(--button-color);
+    background: var(--button-color);
     border-radius: 31px;
     border: 0;
     color: var(--font-color-one);
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 22px;
+    font:500 24px/22px var(--font-1);
     text-align: center;
     cursor:pointer
 }
+
+/* Partners container styling */
 
 .partners-container,footer {
     position: relative;
@@ -334,7 +316,7 @@ input[type=checkbox] {
     align-items: center;
     width: 100%;
     height: 481.59px;
-    background-color: var(--background-color-two)
+    background: var(--background-color-two)
 }
 
 .wavy-top {
@@ -343,18 +325,13 @@ input[type=checkbox] {
     left: 0;
     width: 100%;
     height: 130px;
-    background-image: url(../img/Union.svg);
-    background-repeat: repeat-x
+    background: url(../img/Union.svg) repeat-x
 }
 
 .partners-heading {
     margin-top: 100px;
     margin-bottom: 63px;
-    font-family: var(--font-2);
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    letter-spacing: 0;
+    font:500 24px/36px var(--font-2);
     text-align: center;
     color: var(--font-color-two)
 }
@@ -374,8 +351,10 @@ input[type=checkbox] {
     margin: 0 10px
 }
 
+/* Footer styling */
+
 footer {
-    background-color: var(--background-color-one);
+    background: var(--background-color-one);
     padding: 36px 62px 0
 }
 
@@ -385,8 +364,7 @@ footer {
     left: 0;
     width: 100%;
     height: 50px;
-    background-image: url("../img/Union (2).png");
-    background-repeat: repeat-x
+    background: url("../img/Union (2).png") repeat-x
 }
 
 .footer-top-container {
@@ -406,7 +384,6 @@ footer {
 }
 
 .links,.top-container-inner {
-    height: 100%;
     display: flex;
     flex-direction: column;
     margin: 0
@@ -414,33 +391,27 @@ footer {
 
 .top-container-inner a {
     text-decoration: none;
-    font-size: 18px;
-    line-height: 22px;
+    font: 18px/22px var(--font-1);
     text-align: left;
     margin-bottom: 22px
 }
 
 .top-container-inner h4 {
-    font-size: 24px;
-    line-height: 29px;
+    font: 24px/29px var(--font-1);
     text-align: left;
-    margin-top: 0;
-    margin-bottom: 17px
+    margin:0 0 17px 0;
 }
 
 .footer-bottom-container p,.top-container-inner a,.top-container-inner h4,.top-container-inner h5 {
     font-family: var(--font-1);
     font-weight: 500;
-    letter-spacing: 0;
     color: var(--font-color-one)
 }
 
 .top-container-inner h5 {
-    font-size: 18px;
-    line-height: 22px;
+    font: 18px/22px var(--font-1);
     text-align: left;
-    margin-top: 0;
-    margin-bottom: 10px
+    margin:0 0 10px 
 }
 
 .details h4,.details h5 {
@@ -468,8 +439,7 @@ footer {
 }
 
 .footer-bottom-container p {
-    font-size: 14px;
-    line-height: 17px
+    font: 14px/17px var(--font-1);
 }
 
 .footer-left-p {
