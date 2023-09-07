@@ -58,6 +58,15 @@ header {
             text-align: left;
             margin-right: 5px;
           }
+          a:hover {
+            color: var(--button-color-hover);
+            transform: scale(1.05);
+            transition: transform 0.4s ease;
+          }
+          a:focus{
+            transform: scale(1.05);
+            transition: transform 0.4s ease;
+          } 
   
           .language-link {
             margin-left: 24px;
@@ -76,9 +85,9 @@ main {
     justify-content: center;
     margin: 0;
 
-    /* Video container styling */
     
-    .video-container {
+    
+    .video-container { /* Video container styling */
         position: relative;
         text-align: center;
         max-width: 1366px;
@@ -105,11 +114,14 @@ main {
                 height:auto;
             }
         }
+        button:hover, button:focus {
+            background-color: var(--button-color-hover);
+        }
     }
 
-    /* Text container styling */
+    
 
-    .text-container {
+    .text-container { /* Text container styling */
         max-width: 654px;
         margin: 145px 0;
 
@@ -121,9 +133,9 @@ main {
         }
     }
 
-    /* Img container styling */
+    
 
-    .img-container {
+    .img-container { /* Img container styling */
         position: relative;
         overflow: hidden;
         display: flex;
@@ -154,9 +166,9 @@ main {
         }
     }
 
-    /* Option container styling */
+   
 
-    .option-container {
+    .option-container {  /* Option container styling */
         margin: 150px 0;
         padding: 0 80px;
         max-width: 1366px;
@@ -178,6 +190,7 @@ main {
                 text-align: center;
                 color: var(--font-color-two);
             }
+
             button{
                 width: 233px;
                 height: 50px;
@@ -190,12 +203,16 @@ main {
                 margin-top:20px;
             }
 
+            button:hover, button:focus {
+                background-color: var(--button-color-hover);
+            }
+
         }
     }
 
-    /* Contact form styling */
+    
 
-    form {
+    form { /* Contact form styling */
         max-width: 612px;
 
         h2 {
@@ -228,6 +245,9 @@ main {
                 margin-bottom: 15px;
                 padding-left: 10px;
                 box-sizing: border-box;
+            }
+            .form-input:focus{
+                border:2px solid var(--background-color-two);
             }
             .input-container {
                 width: 100%;
@@ -278,6 +298,9 @@ main {
                 cursor:pointer
 
             }
+            button:hover, button:focus {
+                background-color: var(--button-color-hover);
+            }
 
             input::placeholder,textarea::placeholder {
                 font: 400 18px/22px var(--font-1);
@@ -288,9 +311,9 @@ main {
 
     }
 
-    /* Partners container styling */
+   
 
-    .partners-container {
+    .partners-container {  /* Partners container styling */
         position: relative;
         display: flex;
         flex-direction: column;
@@ -356,9 +379,9 @@ main {
     }
 }
 
-/* Footer styling */
 
-footer {
+
+footer { /* Footer styling */
     background: var(--background-color-one);
     padding: 36px 62px 0;
     position: relative;
@@ -395,7 +418,15 @@ footer {
             a:last-child{
                 margin-bottom:0;
             } 
-
+            a:hover {
+                color: var(--button-color-hover);
+                transform: scale(1.05);
+                transition: transform 0.4s ease;
+            }
+            a:focus{
+                transform: scale(1.05);
+                transition: transform 0.4s ease;
+            } 
             h4 {
                 font: 24px/29px var(--font-1);
                 text-align: left;
@@ -472,19 +503,12 @@ img{
     display: none
 }
 
-button:hover{
-    background-color: var( --button-color-hover);
-}
-
 .icon:hover, a:hover {
     color: var(--button-color-hover);
     transform: scale(1.05);
     transition: transform 0.4s ease;
 }
 
-.contact-form .form-input:focus{
-    border:2px solid var(--background-color-two);
-}
 
 @media (max-width: 850px) {
 	header {
@@ -551,7 +575,7 @@ button:hover{
 	main {
 		.video-container {
 			padding-top: 71px;
-			.play-button {
+			button {
 				top: 53%;
 			}
 		}
@@ -617,7 +641,7 @@ button:hover{
 			}
 		}
 	}
-	.footer-img-container {
+	div {
 		max-width: 162px;
 	}
 	.fa {
@@ -672,7 +696,7 @@ button:hover{
 	main {
 		.video-container {
 			padding-top: 49px;
-			.play-button {
+			button {
 				top: 55%;
 			}
 		}

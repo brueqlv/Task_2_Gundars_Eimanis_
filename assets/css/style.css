@@ -54,6 +54,15 @@ header .header-container .header-container-inner nav a {
     text-align: left;
     margin-right: 5px;
 }
+header .header-container .header-container-inner nav a:hover {
+    color: var(--button-color-hover);
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+header .header-container .header-container-inner nav a:focus {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
 header .header-container .header-container-inner nav .language-link {
     margin-left: 24px;
 }
@@ -96,6 +105,9 @@ main .video-container button {
 main .video-container button i {
     padding: 0 0 0 4px;
     height: auto;
+}
+main .video-container button:hover, main .video-container button:focus {
+    background-color: var(--button-color-hover);
 }
 main .text-container {
     max-width: 654px;
@@ -166,6 +178,9 @@ main .option-container div button {
     cursor: pointer;
     margin-top: 20px;
 }
+main .option-container div button:hover, main .option-container div button:focus {
+    background-color: var(--button-color-hover);
+}
 main form {
     max-width: 612px;
 }
@@ -196,6 +211,9 @@ main form .form-container .form-input {
     margin-bottom: 15px;
     padding-left: 10px;
     box-sizing: border-box;
+}
+main form .form-container .form-input:focus {
+    border: 2px solid var(--background-color-two);
 }
 main form .form-container .input-container {
     width: 100%;
@@ -241,6 +259,9 @@ main form .form-container button {
     font: 500 24px/22px var(--font-1);
     text-align: center;
     cursor: pointer;
+}
+main form .form-container button:hover, main form .form-container button:focus {
+    background-color: var(--button-color-hover);
 }
 main form .form-container input::placeholder, main form .form-container textarea::placeholder {
     font: 400 18px/22px var(--font-1);
@@ -339,6 +360,15 @@ footer .footer-top-container .top-container-inner a {
 footer .footer-top-container .top-container-inner a:last-child {
     margin-bottom: 0;
 }
+footer .footer-top-container .top-container-inner a:hover {
+    color: var(--button-color-hover);
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+footer .footer-top-container .top-container-inner a:focus {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
 footer .footer-top-container .top-container-inner h4 {
     font: 24px/29px var(--font-1);
     text-align: left;
@@ -397,16 +427,10 @@ img {
 .show-on-phone, .show-on-tablet, .show-on-tablet-phone {
     display: none;
 }
-button:hover {
-    background-color: var(--button-color-hover);
-}
 .icon:hover, a:hover {
     color: var(--button-color-hover);
     transform: scale(1.05);
     transition: transform 0.4s ease;
-}
-.contact-form .form-input:focus {
-    border: 2px solid var(--background-color-two);
 }
 @media (max-width: 850px) {
     header .header-container {
@@ -465,7 +489,7 @@ button:hover {
     main .video-container {
         padding-top: 71px;
    }
-    main .video-container .play-button {
+    main .video-container button {
         top: 53%;
    }
     main .text-container {
@@ -521,7 +545,7 @@ button:hover {
     main .partners-container .partners-container-inner div {
         margin: 0 25px;
    }
-    .footer-img-container {
+    div {
         max-width: 162px;
    }
     .fa {
@@ -568,7 +592,7 @@ button:hover {
     main .video-container {
         padding-top: 49px;
    }
-    main .video-container .play-button {
+    main .video-container button {
         top: 55%;
    }
     main .text-container {
