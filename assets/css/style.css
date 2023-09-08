@@ -73,14 +73,9 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0;
-   /* Video container styling */
-   /* Text container styling */
-   /* Img container styling */
-   /* Option container styling */
-   /* Contact form styling */
-   /* Partners container styling */
 }
 main .video-container {
+   /* Video container styling */
     position: relative;
     text-align: center;
     max-width: 1366px;
@@ -110,6 +105,7 @@ main .video-container button:hover, main .video-container button:focus {
     background-color: var(--button-color-hover);
 }
 main .text-container {
+   /* Text container styling */
     max-width: 654px;
     margin: 145px 0;
 }
@@ -120,6 +116,7 @@ main .text-container p {
     color: var(--font-color-two);
 }
 main .img-container {
+   /* Img container styling */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -146,6 +143,7 @@ main .img-container div {
     justify-content: flex-end;
 }
 main .option-container {
+   /* Option container styling */
     margin: 150px 0;
     padding: 0 80px;
     max-width: 1366px;
@@ -182,6 +180,7 @@ main .option-container div button:hover, main .option-container div button:focus
     background-color: var(--button-color-hover);
 }
 main form {
+   /* Contact form styling */
     max-width: 612px;
 }
 main form h2 {
@@ -269,6 +268,7 @@ main form .form-container input::placeholder, main form .form-container textarea
     color: var(--font-color-two);
 }
 main .partners-container {
+   /* Partners container styling */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -323,8 +323,8 @@ main .scroll-to-top .fa-arrow-up {
     color: #020202 80;
     padding: 0;
 }
-/* Footer styling */
 footer {
+   /* Footer styling */
     background: var(--background-color-one);
     padding: 36px 62px 0;
     position: relative;
@@ -545,9 +545,7 @@ img {
     main .partners-container .partners-container-inner div {
         margin: 0 25px;
    }
-    div {
-        max-width: 162px;
-   }
+ 
     .fa {
         font-size: 28px;
         padding: 10px 0 0 27px;
