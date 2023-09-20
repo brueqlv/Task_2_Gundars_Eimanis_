@@ -8,25 +8,18 @@ main{
     .text-container{
         margin-top:172px;
         h1{
-            font-family: var(--font-2);
-            font-size: 48px;
-            font-weight: 500;
-            line-height: 71px;
-            letter-spacing: 0em;
+            font: 500 48px/71px var(--font-2);
             text-align: center;
-            color:var(--font-color-two);
-
+            letter-spacing: 0;
+            color: var(--font-color-two);
         }
         p{
-            font-family: var(--font-1);
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 22px;
-            letter-spacing: 0em;
+            font: 400 18px/22px var(--font-1);
             text-align: center;
-            color:var(--font-color-two);
-            max-width:606px;
-            margin-top:60px;
+            letter-spacing: 0;
+            color: var(--font-color-two);
+            max-width: 606px;
+            margin-top: 60px;
         }
     }
 
@@ -35,10 +28,6 @@ main{
         overflow: hidden;
         max-width: 1366px;
         margin-top:135px;
-
-
-        
-        
 
         .ripped{
             position: absolute;
@@ -56,18 +45,14 @@ main{
             bottom:-1px;
         }
         p{
-            position:absolute;
-            font-family: var(--font-2);
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 36px;
-            letter-spacing: 0em;
+            position: absolute;
+            font: 500 24px/36px var(--font-2);
             text-align: center;
-            color:var(--font-color-one);
-            width:59%;
-            bottom:9.5%;
-            left:50%;
-            transform:translate(-50%, 0);
+            color: var(--font-color-one);
+            width: 59%;
+            bottom: 9.5%;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .cover{
             text-align: center;
@@ -99,34 +84,21 @@ main{
         .quote-container-inner{
             margin-bottom:30px;
             h2{
-                font-family: var(--font-2);
-                font-size: 24px;
-                font-weight: 500;
-                line-height: 36px;
-                letter-spacing: 0em;
+                font: 500 24px/36px var(--font-2);
                 text-align: left;
-                color:var(--font-color-two);
-                margin-bottom: 0px;
+                color: var(--font-color-two);
+                margin-bottom: 0;
             }
             h3{
-                font-family: var(--font-1);
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 22px;
-                letter-spacing: 0em;
+                font: 400 18px/22px var(--font-1);
                 text-align: left;
-                color:var(--font-color-two);
-                margin:8px 0 35px 0;
+                color: var(--font-color-two);
+                margin: 8px 0 35px 0;
             }
             p{
-                font-family: var(--font-1);
-                font-size: 24px;
-                font-style: italic;
-                font-weight: 400;
-                line-height: 29px;
-                letter-spacing: 0em;
+                font: italic 400 24px/29px var(--font-1);
                 text-align: left;
-                color:var(--font-color-two);
+                color: var(--font-color-two);
                 margin-bottom: 0;
             }
         }
