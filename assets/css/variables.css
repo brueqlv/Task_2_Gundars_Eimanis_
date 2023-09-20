@@ -1,0 +1,20 @@
+:root {
+  --font-1: Montserrat;
+  --font-2: Oswald;
+  --background-color-one: #2f4858;
+  --background-color-two: #ffcb66;
+  --button-color: #ffa800;
+  --button-color-hover: #ffc043;
+  --font-color-one: #fff;
+  --font-color-two: #2f4858;
+  --icon-color-one: #000000;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Oswald;
+  src: url(../font/Oswald-VariableFont_wght.ttf);
+}/*# sourceMappingURL=variables.css.map */
