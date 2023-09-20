@@ -1,0 +1,447 @@
+:root {
+  --font-1: Montserrat;
+  --font-2: Oswald;
+  --background-color-one: #2f4858;
+  --background-color-two: #ffcb66;
+  --button-color: #ffa800;
+  --button-color-hover: #ffc043;
+  --font-color-one: #fff;
+  --font-color-two: #2f4858;
+  --icon-color-one: #000000;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Oswald;
+  src: url(../font/Oswald-VariableFont_wght.ttf);
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+main .text-container {
+  margin-top: 172px;
+}
+main .text-container h1 {
+  font: 500 48px/71px var(--font-2);
+  text-align: center;
+  letter-spacing: 0;
+  color: var(--font-color-two);
+}
+main .text-container p {
+  font: 500 24px/30px var(--font-1);
+  text-align: center;
+  letter-spacing: 0;
+  color: var(--font-color-two);
+  max-width: 816px;
+  margin-top: 60px;
+}
+main .option-container {
+  margin: 75px 0 150px 0;
+  padding: 0 90px;
+  max-width: 1366px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+main .option-container .option-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 394px;
+}
+main .option-container .option-inner-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .option-container .option-inner-container div div {
+  width: 166.12px;
+  height: 192px;
+  position: relative;
+}
+main .option-container .option-inner-container div div .stars-left {
+  position: absolute;
+  top: -5px;
+  left: -7px;
+  transform: rotateY(180deg);
+}
+main .option-container .option-inner-container div div .object-left {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main .option-container .option-inner-container div div .stars-right {
+  position: absolute;
+  top: -5px;
+  right: -7px;
+}
+main .option-container .option-inner-container div div .object-right {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+main .option-container .option-inner-container div h3 {
+  font-family: var(--font-2);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--font-color-two);
+  margin: 53px 0 20px 0;
+}
+main .option-container .option-inner-container div p {
+  font-family: var(--font-1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--font-color-two);
+  margin: 0;
+}
+main .option-container .option-inner-container button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: var(--button-color);
+  color: var(--font-color-one);
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  width: 233px;
+  height: 50px;
+  border-radius: 25px;
+  font: 18px/22px var(--font-1);
+  margin-top: 50px;
+}
+main .option-container .option-inner-container button:hover, main .option-container .option-inner-container button:focus {
+  background-color: var(--button-color-hover);
+}
+main .option-container .left {
+  margin-right: 40px;
+}
+main .option-container .right {
+  margin-left: 40px;
+}
+main .img-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+main .img-container .ripped {
+  position: absolute;
+  background-color: transparent;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 55px;
+}
+main .img-container .top {
+  top: 0;
+  transform: rotateY(180deg);
+}
+main .img-container .bottom {
+  bottom: -1px;
+}
+main .img-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main .img-container img {
+  width: 100%;
+}
+main form {
+  max-width: 612px;
+  margin: 175px 0 185px 0;
+}
+main form h2 {
+  font: 500 30px/44px var(--font-2);
+  text-align: center;
+  color: var(--font-color-two);
+  margin: 0 0 50px;
+}
+main form .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+main form .form-container .form-row {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+main form .form-container .form-input {
+  border: 0;
+  width: 100%;
+  height: 43px;
+  border-radius: 6px;
+  background: rgba(196, 196, 196, 0.4);
+  text-align: left;
+  margin-bottom: 15px;
+  padding: 10px 0 0 10px;
+  box-sizing: border-box;
+}
+main form .form-container .form-input:focus {
+  border: 2px solid var(--background-color-two);
+}
+main form .form-container .input-container {
+  width: 100%;
+}
+main form .form-container .input-container textarea {
+  height: 232px;
+  padding: 12px 0 0 10px;
+  margin-bottom: 13px;
+}
+main form .form-container .input-container label {
+  font: 400 14px/17px var(--font-1);
+  text-align: left;
+  color: var(--font-color-two);
+}
+main form .form-container .checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 33px;
+}
+main form .form-container .checkbox-container input[type=checkbox] {
+  margin-right: 25px;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #e7e7e7;
+}
+main form .form-container .checkbox-container label {
+  font: 400 14px/17px var(--font-1);
+  text-align: left;
+  color: var(--font-color-two);
+}
+main form .form-container button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: var(--button-color);
+  color: var(--font-color-one);
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  margin-top: 55px;
+  width: 182px;
+  height: 62px;
+  border-radius: 31px;
+  font: 500 24px/22px var(--font-1);
+  text-align: center;
+}
+main form .form-container button:hover, main form .form-container button:focus {
+  background-color: var(--button-color-hover);
+}
+main form .form-container input::-moz-placeholder, main form .form-container textarea::-moz-placeholder {
+  font: 400 18px/22px var(--font-1);
+  letter-spacing: -0.015em;
+  color: var(--font-color-two);
+}
+main form .form-container input::placeholder,
+main form .form-container textarea::placeholder {
+  font: 400 18px/22px var(--font-1);
+  letter-spacing: -0.015em;
+  color: var(--font-color-two);
+}
+
+@media (max-width: 850px) {
+  main {
+    padding: 0 70px;
+  }
+  main .text-container {
+    margin-top: 135px;
+  }
+  main .text-container p {
+    max-width: 816px;
+    margin-top: 50px;
+  }
+  main .option-container {
+    margin: 75px 0 150px 0;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  main .option-container .option-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  main .option-container .option-inner-container div h3 {
+    margin: 53px 0 23px 0;
+  }
+  main .option-container .option-inner-container button {
+    margin-top: 55px;
+  }
+  main .option-container .left {
+    margin-right: 0px;
+  }
+  main .option-container .right {
+    margin-left: 0px;
+  }
+  main .option-container .left {
+    margin-bottom: 160px;
+  }
+  main .img-container {
+    width: 100vw;
+  }
+  main .img-container .ripped {
+    height: 35px;
+  }
+  main form {
+    margin: 160px 0 165px 0;
+  }
+  main form h2 {
+    margin-bottom: 59px;
+  }
+  main form .form-container .form-input {
+    height: 40px;
+  }
+  main form .form-container .input-container textarea {
+    height: 230px;
+    margin-bottom: 12px;
+  }
+  main form .form-container .checkbox-container {
+    margin-top: 10px;
+  }
+  main form .form-container .checkbox-container input[type=checkbox] {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 660px) {
+  main {
+    padding: 0 20px;
+  }
+  main .text-container {
+    margin-top: 80px;
+  }
+  main .text-container h1 {
+    font-size: 36px;
+    line-height: 53px;
+  }
+  main .text-container p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 28px;
+  }
+  main .option-container {
+    margin: 75px 0 120px 0;
+  }
+  main .option-container .option-inner-container div h3 {
+    margin: 28px 0 13px 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  main .option-container .option-inner-container div p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  main .option-container .option-inner-container div div .stars-right {
+    position: absolute;
+    top: 1px;
+    right: -20px;
+  }
+  main .option-container .option-inner-container div div .object-right {
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+  }
+  main .option-container .option-inner-container button {
+    margin-top: 55px;
+  }
+  main .option-container .left {
+    margin-bottom: 75px;
+  }
+  main .img-container {
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: baseline;
+  }
+  main .img-container .bottom {
+    transform: rotateY(180deg);
+    height: 50px;
+  }
+  main .img-container .img-container-inner:nth-child(4) {
+    width: 38.4%;
+  }
+  main .img-container .img-container-inner:nth-child(5) {
+    width: 61.6%;
+  }
+  main .img-container .img-container-inner:nth-child(2) {
+    width: 50%;
+    order: 4;
+  }
+  main .img-container .img-container-inner:nth-child(3) {
+    width: 50%;
+    order: 5;
+    align-self: flex-start;
+  }
+  main form {
+    margin: 105px 0 137px 0;
+  }
+  main form h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  main form .form-container {
+    padding: 0px;
+  }
+  main form .form-container .form-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  main form .form-container .form-row input::-moz-placeholder {
+    font-size: 14px;
+  }
+  main form .form-container .form-row input::placeholder {
+    font-size: 14px;
+  }
+  main form .form-container .form-input {
+    height: 35px;
+    margin-bottom: 10px;
+  }
+  main form .form-container .form-input::-moz-placeholder {
+    font-size: 14px;
+  }
+  main form .form-container .form-input::placeholder {
+    font-size: 14px;
+  }
+  main form .form-container .input-container textarea {
+    height: 150px;
+    margin-bottom: 5px;
+  }
+  main form .form-container .input-container textarea::-moz-placeholder {
+    font-size: 14px;
+  }
+  main form .form-container .input-container textarea::placeholder {
+    font-size: 14px;
+  }
+  main form .form-container .input-container label {
+    font-size: 12px;
+  }
+  main form .form-container .checkbox-container label {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  main form .form-container .checkbox-container input[type=checkbox] {
+    margin-right: 20px;
+  }
+  main form .form-container button {
+    width: 140px;
+    height: 48px;
+    margin-top: 55px;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=piesaki-sapni-style.css.map */
