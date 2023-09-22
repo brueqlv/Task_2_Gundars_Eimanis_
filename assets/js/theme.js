@@ -46,3 +46,4 @@ function updateButtonSize() {
 updateButtonSize();
 
 window.addEventListener('resize', updateButtonSize);
+

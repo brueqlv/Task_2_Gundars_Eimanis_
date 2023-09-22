@@ -7,6 +7,7 @@
   --button-color-hover: #ffc043;
   --font-color-one: #fff;
   --font-color-two: #2f4858;
+  --font-color-three: #ffa800;
   --icon-color-one: #000000;
 }
 
@@ -38,9 +39,84 @@ main .text-container p {
   text-align: center;
   color: var(--font-color-two);
   max-width: 816px;
-  margin-top: 60px;
+  margin-top: 65px;
 }
 main .search-container {
   width: 100%;
   max-width: 1033px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 75px;
+  margin-bottom: 400px;
+}
+main .search-container .custom-select {
+  position: relative;
+  width: 288px;
+  font-size: 16px;
+}
+main .search-container .custom-select label {
+  font-family: var(--font-1);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  color: var(--font-color-three);
+}
+main .search-container .select-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 288px;
+  margin-top: 15px;
+  /* Style the selected value */
+}
+main .search-container .select-wrapper .dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(196, 196, 196, 0.4);
+  width: 100%;
+  display: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+main .search-container .select-wrapper .dropdown li {
+  padding: 8px;
+  cursor: pointer;
+}
+main .search-container .select-wrapper .open {
+  display: block;
+}
+main .search-container .select-wrapper .selected-value {
+  background: rgba(196, 196, 196, 0.4);
+  height: 25px;
+  border-radius: 6px;
+  padding: 9px 15px;
+  font-family: var(--font-1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+main .search-container .select-wrapper .selected {
+  font-weight: 600;
+}
+main .search-container .select-wrapper .arrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+main .search-container .select-wrapper .no-border-radius {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }/*# sourceMappingURL=sapnus-atbalsta.css.map */

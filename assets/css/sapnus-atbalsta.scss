@@ -18,11 +18,96 @@ main{
             text-align: center;
             color: var(--font-color-two);
             max-width: 816px;
-            margin-top: 60px;
+            margin-top: 65px;
         }
     }
     .search-container{
         width:100%;
         max-width: 1033px;
+        display:flex;
+        justify-content: center;
+        gap:30px;
+        margin-top:75px;
+        margin-bottom: 400px;
+ 
+        .custom-select {
+            position: relative;
+            width: 288px;
+            font-size: 16px;
+            label{
+                font-family: var(--font-1);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: -0.015em;
+                text-align: left;
+                color:var(--font-color-three);
+            }
+          }
+          
+          .select-wrapper {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            user-select: none; 
+            width:288px;
+            margin-top: 15px;
+
+
+            .dropdown {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: #C4C4C466;
+                width:100%;
+                display: none;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+
+                li {
+                    padding: 8px;
+                    cursor: pointer;
+                  }
+              }
+              .open{
+                display:block;
+              }
+
+                      /* Style the selected value */
+          .selected-value {
+            background: #C4C4C466;
+            height:25px;
+            border-radius: 6px;
+            padding: 9px 15px;
+            font-family: var(--font-1);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: -0.015em;
+            text-align: left;
+
+
+          }
+          .selected{
+            font-weight: 600;
+          }
+
+            .arrow {
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+            }
+            .no-border-radius {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+          }
+         
+
+
     }
 }

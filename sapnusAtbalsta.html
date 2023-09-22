@@ -33,27 +33,38 @@
     </header>
     <main>
         <div class="text-container">
-            <h1>UZŅĒMĒJIEM</h1>
-            <p>Ja ticat labākas pasaules attīstībai un vēlaties piedalīties starptautisku ideju realizēšanā, tad priecāsimies ar Jums iepazīties.</p>
+            <h1>SAPŅUS ATBALSTA</h1>
+            <p>Sadarbības partneri ir uzņēmumi, kuri savā preču vai pakalpojumu 
+                ikdienā ir integrējuši SparkleHeart zīmolu un dala ar to konkrētu 
+                daļu savu ienākumu.
+            </p>
         </div>
         <div class="search-container">
-            <div>
+            <div class="custom-select">
                 <label for="city-select">Uzņemuma atrašanas vieta</label>
-                <select name="citys" id="city-select">
-                    <option value="" disabled selected>Izvēlies</option>
-                    <option value="Riga">Rīga</option>
-                    <option value="Jelgava">Jelgava</option>
-                    <option value="Ogre">Ogre</option>
-                </select>
+                <div class="select-wrapper">
+                  <div class="selected-value">Izvēlies</div>
+                  <img class="arrow" src="assets/img/DownArrow.svg"> 
+                  <ul class="dropdown">
+                    <li data-value="Riga">Rīga</li>
+                    <li data-value="Jelgava">Jelgava</li>
+                    <li data-value="Ogre">Ogre</li>
+                  </ul>
+                </div>
             </div>
-            <div>
-                <label for="type-select">Uzņemuma veids</label>
-                <select name="types" id="type-select">
-                    <option value="" disabled selected>Izvēlies</option>
-                    <option value="Edinasana">Ēdināšana</option>
-                    <option value="Izklaide">Izklaide</option>
-                </select>
+            <div class="custom-select">
+                <label for="city-select">Uzņemuma veids</label>
+                <div class="select-wrapper">
+                  <div class="selected-value">Izvēlies</div>
+                  <img class="arrow" src="assets/img/DownArrow.svg"> 
+                  <ul class="dropdown">
+                    <li data-value="Edinasana">Edināšana</li>
+                  </ul>
+                </div>
             </div>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed/v1/place?q=RIGA&key=AIzaSyBzsMch-KsSctmLnQTa1ETQ60XnKvd70EU" frameborder="0"></iframe>
         </div>
     </main>
     <footer>
@@ -99,7 +110,7 @@
             <i class="icon fa fa-arrow-up"></i>
         </div>
     </footer>
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/dropdown.js"></script>
     
 </body>
 </html>
