@@ -11,6 +11,7 @@ header {
   z-index: 2;
   position: fixed;
   overflow: hidden;
+  
 
   .header-container {
     background-image: url(../img/Union.svg);
@@ -211,7 +212,7 @@ footer {
   
 }
 
-@media (max-width:850px){
+@media (max-width:991px){
 
   header {
       .header-container {

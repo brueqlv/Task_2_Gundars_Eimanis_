@@ -204,7 +204,7 @@ footer .scroll-to-top .fa-arrow-up {
   font-size: 36px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 991px) {
   header .header-container {
     top: -20px;
   }

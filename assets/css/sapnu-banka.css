@@ -39,6 +39,9 @@ main .video-container {
   max-width: 1366px;
   padding-top: 32px;
 }
+main .video-container img {
+  width: 100%;
+}
 main .video-container button {
   transition: background-color 0.3s ease, transform 0.3s ease;
   background-color: var(--button-color);
@@ -80,11 +83,11 @@ main .purpose-container .inner-container {
   align-self: flex-end;
   align-items: end;
   margin-bottom: 100px;
-  margin-right: 110px;
+  margin-right: 10.6%;
 }
 main .purpose-container .inner-container img {
   max-width: 150px;
-  margin: 0 65px;
+  margin: 0 65px 0 0;
 }
 main .purpose-container .inner-container p {
   font-family: var(--font-1);
@@ -99,6 +102,9 @@ main .purpose-container .inner-container p {
 main .purpose-container .inner-container:nth-child(odd) {
   align-self: flex-start;
   margin-bottom: 116px;
+}
+main .purpose-container .inner-container:nth-child(odd) img {
+  margin: 0 0 0 65px;
 }
 main .purpose-container .inner-container:nth-child(odd) p {
   text-align: right;
@@ -234,4 +240,231 @@ main .option-container div button {
 }
 main .option-container div button:hover, main .option-container div button:focus {
   background-color: var(--button-color-hover);
+}
+
+@media (max-width: 991px) {
+  main .title-container {
+    margin-top: 135px;
+  }
+  main .video-container {
+    padding-top: 19px;
+  }
+  main .purpose-container .inner-container {
+    align-items: start;
+    margin-bottom: 72px;
+  }
+  main .purpose-container .inner-container img {
+    margin: 0 70px 0 0;
+  }
+  main .purpose-container .inner-container p {
+    max-width: 353px;
+    margin-top: 8px;
+  }
+  main .purpose-container .inner-container:nth-child(odd) {
+    margin: 0 0 90px 10.6%;
+  }
+  main .purpose-container .inner-container:nth-child(odd) img {
+    margin: 0 0 0 65px;
+  }
+  main .purpose-container .inner-container:nth-child(odd) p {
+    text-align: right;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+  }
+  main .mission-container {
+    margin-top: 35px;
+  }
+  main .mission-container h3 {
+    margin-bottom: 30px;
+  }
+  main .orange-container .content p {
+    width: 80%;
+  }
+  main .dream-select-container {
+    margin-top: 95px;
+  }
+  main .dream-select-container .inner-container .content {
+    width: 310px;
+  }
+  main .dream-select-container .inner-container .content div {
+    justify-content: flex-start;
+  }
+  main .dream-select-container .inner-container .content div img {
+    height: 100px;
+    width: auto;
+  }
+  main .dream-select-container .inner-container .content div p {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 255px;
+    margin-top: 25px;
+  }
+  main .dream-select-container .inner-container .content div .right {
+    margin-top: 0;
+  }
+  main .second-orange-container {
+    margin-top: 140px;
+  }
+  main .second-orange-container .background {
+    height: 90%;
+  }
+  main .option-container {
+    margin: 93px 0 170px 0;
+    align-items: flex-start;
+    padding: 0;
+  }
+  main .option-container div {
+    min-height: 150px;
+    width: 360px;
+  }
+  main .option-container div h3 {
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 233px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 660px) {
+  main .title-container {
+    margin-top: 80px;
+  }
+  main .title-container h1 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+  main .video-container {
+    padding-top: 0;
+  }
+  main .video-container button {
+    top: 42%;
+  }
+  main .purpose-container {
+    margin-top: 90px;
+    align-items: center;
+  }
+  main .purpose-container h3 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 45px;
+  }
+  main .purpose-container .inner-container {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    max-width: 88%;
+    align-self: auto;
+    margin-bottom: 22px;
+  }
+  main .purpose-container .inner-container img {
+    transform: scale(0.8);
+    margin: 0;
+  }
+  main .purpose-container .inner-container p {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  main .purpose-container .inner-container:nth-child(odd) {
+    margin: 0;
+    flex-direction: column-reverse;
+    align-self: auto;
+    margin-bottom: 40px;
+  }
+  main .purpose-container .inner-container:nth-child(odd) img {
+    margin: 0;
+  }
+  main .purpose-container .inner-container:nth-child(odd) p {
+    text-align: center;
+  }
+  main .mission-container {
+    margin-top: 45px;
+    max-width: 88%;
+  }
+  main .mission-container h3 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+  main .mission-container p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  main .orange-container {
+    margin-top: 85px;
+  }
+  main .orange-container .content .img-container1 {
+    margin-top: 92px;
+  }
+  main .orange-container .content .img-container1 img {
+    height: 190px;
+    width: auto;
+  }
+  main .orange-container .content p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 25px;
+    width: 88%;
+  }
+  main .dream-select-container {
+    margin-top: 85px;
+    width: 100%;
+  }
+  main .dream-select-container h3 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 72px;
+  }
+  main .dream-select-container .inner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .dream-select-container .inner-container .content {
+    margin-bottom: 44px;
+  }
+  main .dream-select-container .inner-container .content div p {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 280px;
+    margin-top: 24px;
+  }
+  main .dream-select-container .inner-container .content div .right {
+    max-height: 80px;
+    width: auto;
+  }
+  main .second-orange-container {
+    margin-top: 43px;
+  }
+  main .second-orange-container .background {
+    height: 100%;
+  }
+  main .second-orange-container .content p {
+    margin-top: 20px;
+  }
+  main .second-orange-container .content .img-container1 {
+    margin-right: 0;
+  }
+  main .second-orange-container .content .img-container1 img {
+    max-height: 179px;
+    width: auto;
+  }
+  main .option-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 102px;
+    margin-bottom: 72px;
+  }
+  main .option-container div {
+    justify-content: flex-start;
+    height: 150px;
+    margin-bottom: 60px;
+    width: 90%;
+  }
+  main .option-container div h3 {
+    line-height: 27px;
+    max-width: 100%;
+  }
+  main .option-container div button {
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=sapnu-banka.css.map */

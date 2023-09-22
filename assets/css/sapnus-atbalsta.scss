@@ -1,0 +1,28 @@
+@import 'variables';
+
+main{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden ;
+    .text-container{
+        margin-top:172px;
+        h1{
+            font: 500 48px/71px var(--font-2);
+            text-align: center;
+            letter-spacing: 0;
+            color: var(--font-color-two);
+        }
+        p{
+            font: 400 18px/22px var(--font-1);
+            text-align: center;
+            color: var(--font-color-two);
+            max-width: 816px;
+            margin-top: 60px;
+        }
+    }
+    .search-container{
+        width:100%;
+        max-width: 1033px;
+    }
+}

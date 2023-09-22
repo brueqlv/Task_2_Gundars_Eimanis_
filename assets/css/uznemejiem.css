@@ -135,7 +135,7 @@ main form .form-container textarea::placeholder {
   color: var(--font-color-two);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 991px) {
   main {
     padding: 0 70px;
   }
