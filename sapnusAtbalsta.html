@@ -59,12 +59,13 @@
                   <img class="arrow" src="assets/img/DownArrow.svg"> 
                   <ul class="dropdown">
                     <li data-value="Edinasana">Edināšana</li>
+                    <li data-value="Edinasana">Izklaide</li>
                   </ul>
                 </div>
             </div>
         </div>
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed/v1/place?q=RIGA&key=AIzaSyBzsMch-KsSctmLnQTa1ETQ60XnKvd70EU" frameborder="0"></iframe>
+        <div id="map" class="map-container">
+                
         </div>
     </main>
     <footer>
@@ -111,6 +112,8 @@
         </div>
     </footer>
     <script src="assets/js/dropdown.js"></script>
-    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8tuC1GL8INuR56adi1BCoWYowvcU32Y&libraries=places&callback=initMap" async defer></script>
+
+
 </body>
 </html>
