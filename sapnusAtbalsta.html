@@ -42,30 +42,48 @@
         <div class="search-container">
             <div class="custom-select">
                 <label for="city-select">Uzņemuma atrašanas vieta</label>
-                <div class="select-wrapper">
-                  <div class="selected-value">Izvēlies</div>
-                  <img class="arrow" src="assets/img/DownArrow.svg"> 
-                  <ul class="dropdown">
-                    <li data-value="Riga">Rīga</li>
-                    <li data-value="Jelgava">Jelgava</li>
-                    <li data-value="Ogre">Ogre</li>
-                  </ul>
+                <div class="select-wrapper" id="city-select">
+                    <div class="selected-value">Izvēlies</div>
+                    <img class="arrow" src="assets/img/DownArrow.svg"> 
+                    <ul class="dropdown">
+                        <li data-value="Riga">Rīga</li>
+                        <li data-value="Jelgava">Jelgava</li>
+                        <li data-value="Ogre">Ogre</li>
+                    </ul>
                 </div>
             </div>
             <div class="custom-select">
-                <label for="city-select">Uzņemuma veids</label>
-                <div class="select-wrapper">
-                  <div class="selected-value">Izvēlies</div>
-                  <img class="arrow" src="assets/img/DownArrow.svg"> 
-                  <ul class="dropdown">
-                    <li data-value="Edinasana">Edināšana</li>
-                    <li data-value="Edinasana">Izklaide</li>
-                  </ul>
+                <label for="type-select">Uzņemuma veids</label>
+                <div class="select-wrapper" id="type-select">
+                    <div class="selected-value">Izvēlies</div>
+                    <img class="arrow" src="assets/img/DownArrow.svg"> 
+                    <ul class="dropdown">
+                        <li data-value="Edinasana">Edināšana</li>
+                        <li data-value="Izklaide">Izklaide</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="company-container">
+            <div class="inner-container">
+                <img src="/assets/img/purch.svg" alt="PURCH logo">
+                <h3>PURCH restaurant</h3>
+                <div>
+                    <p>+371 25425254</p>
+                    <p>Dzelzavas iela 51A</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <img src="/assets/img/kurts.svg" alt="PURCH logo">
+                <h3>Kurts coffee</h3>
+                <div>
+                    <p>+371 23202079</p>
+                    <p>Cēsu iela 20, Tērbatas iela 2i</p>
                 </div>
             </div>
         </div>
         <div id="map" class="map-container">
-                
         </div>
     </main>
     <footer>
@@ -112,8 +130,8 @@
         </div>
     </footer>
     <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8tuC1GL8INuR56adi1BCoWYowvcU32Y&libraries=places&callback=initMap" async defer></script>
-
 
 </body>
 </html>

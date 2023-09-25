@@ -48,7 +48,7 @@ main .search-container {
   justify-content: center;
   gap: 30px;
   margin-top: 75px;
-  margin-bottom: 57px;
+  margin-bottom: 218px;
 }
 main .search-container .custom-select {
   position: relative;
@@ -88,6 +88,7 @@ main .search-container .select-wrapper .dropdown {
   display: none;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  z-index: 1;
 }
 main .search-container .select-wrapper .dropdown li {
   font-family: var(--font-1);
@@ -137,6 +138,50 @@ main .search-container .select-wrapper .no-border-radius {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+main .company-container {
+  display: none;
+  width: 80%;
+  max-width: 1366;
+  margin-bottom: 40px;
+}
+main .company-container .inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 87%;
+  min-height: 135px;
+}
+main .company-container .inner-container img {
+  width: 120px;
+  box-sizing: border-box;
+  margin-left: 132px;
+  margin-bottom: 15px;
+}
+main .company-container .inner-container h3 {
+  font-family: var(--font-1);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--font-color-two);
+  width: 250px;
+  margin: 0;
+}
+main .company-container .inner-container p {
+  font-family: var(--font-1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: var(--font-color-two);
+  width: 255px;
+  margin: 0;
+}
+main .company-container .inner-container:nth-child(2) img {
+  margin: 0 0 0 137px;
+}
 main .map-container {
   width: 100%;
   max-width: 1383px;
@@ -145,4 +190,68 @@ main .map-container {
 main .map-container iframe {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 991px) {
+  main .text-container {
+    max-width: 80%;
+    margin-top: 135px;
+  }
+  main .text-container p {
+    margin-top: 50px;
+  }
+  main .search-container {
+    margin-bottom: 65px;
+  }
+  main .map-container {
+    height: 812px;
+  }
+}
+@media (max-width: 660px) {
+  main {
+    padding: 0 20px;
+  }
+  main .text-container {
+    margin-top: 80px;
+    max-width: 100%;
+  }
+  main .text-container h1 {
+    font-size: 36px;
+    line-height: 53px;
+  }
+  main .text-container p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 28px;
+  }
+  main .search-container {
+    flex-wrap: wrap;
+    margin-top: 68px;
+    margin-bottom: 80px;
+    gap: 45px;
+  }
+  main .search-container .custom-select label {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  main .search-container .custom-select .select-wrapper {
+    width: 100%;
+    margin-top: 10px;
+  }
+  main .search-container .custom-select .select-wrapper .selected-value {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 15px 15px 3px 15px;
+  }
+  main .search-container .custom-select .select-wrapper ul li {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  main .search-container .custom-select .select-wrapper .arrow {
+    top: 64%;
+  }
+  main .map-container {
+    width: 100vw;
+    height: 606px;
+  }
 }/*# sourceMappingURL=sapnus-atbalsta.css.map */
