@@ -76,6 +76,55 @@ header {
     }
   }
 }
+.header-navbar-popup{
+  position: absolute;
+  top:81px;
+  left:0;
+  background:var(--background-color-three);
+  width:100vw;
+  height:100%;
+  display:none;
+  flex-direction: column;
+  align-items: center;
+  z-index:2;
+
+  a {
+    text-decoration: none;
+    font: 500 24px/30px var(--font-1);
+    color: #060606;
+    text-align: left;
+  }
+
+  a:hover {
+    color: var(--button-color-hover);
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+  }
+
+  a:focus {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+  }
+
+  .language-navbar{
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    width:288px;
+    margin-top:109px;
+
+
+  }
+  .link-navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 74px;
+    gap:74px;
+  }
+  
+}
+
 
 footer {
   background: var(--background-color-one);
@@ -221,8 +270,11 @@ footer {
             .fa-bars {
               display: block;
               color: var(--icon-color-one);
-              padding: 0px 17px 17px 0px;
+              padding: 0px 12px 28px 0px;
               font-size: 32px;
+            }
+            .fa-close{
+              padding: 0px 12px 28px 0px;
             }
           }
             
@@ -307,12 +359,13 @@ footer {
         .header-container-inner {
           div{
             .fa-close {
-              display: block;
               padding: 16px 17px 2px;
               font-size: 32px;
             }
             .fa-bars{
-              display:none;
+              display:block;
+              padding: 16px 17px 2px;
+              font-size: 32px;
             }
           }
 
@@ -329,6 +382,31 @@ footer {
       }
   
     }
+    .header-navbar-popup{
+      top:43px;
+    
+      a {
+        font: 500 18px/22px var(--font-1);
+      }
+      .language-navbar{
+        max-width: 70%;
+        display: flex;
+        justify-content: space-between;
+        width:145px;
+        margin-top:49px;
+    
+    
+      }
+      .link-navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 43px;
+        gap:42px;
+      }
+      
+    }
+    
 
     footer {
       z-index: 2;

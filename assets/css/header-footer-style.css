@@ -3,6 +3,7 @@
   --font-2: Oswald;
   --background-color-one: #2f4858;
   --background-color-two: #ffcb66;
+  --background-color-three:#FFF;
   --button-color: #ffa800;
   --button-color-hover: #ffc043;
   --font-color-one: #fff;
@@ -82,6 +83,48 @@ header .header-container .header-container-inner nav a:focus {
 }
 header .header-container .header-container-inner nav .language-link {
   margin-left: 24px;
+}
+
+.header-navbar-popup {
+  position: absolute;
+  top: 81px;
+  left: 0;
+  background: var(--background-color-three);
+  width: 100vw;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.header-navbar-popup a {
+  text-decoration: none;
+  font: 500 24px/30px var(--font-1);
+  color: #060606;
+  text-align: left;
+}
+.header-navbar-popup a:hover {
+  color: var(--button-color-hover);
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+.header-navbar-popup a:focus {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+.header-navbar-popup .language-navbar {
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  width: 288px;
+  margin-top: 109px;
+}
+.header-navbar-popup .link-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 74px;
+  gap: 74px;
 }
 
 footer {
@@ -215,8 +258,11 @@ footer .scroll-to-top .fa-arrow-up {
   header .header-container .header-container-inner div .fa-bars {
     display: block;
     color: var(--icon-color-one);
-    padding: 0px 17px 17px 0px;
+    padding: 0px 12px 28px 0px;
     font-size: 32px;
+  }
+  header .header-container .header-container-inner div .fa-close {
+    padding: 0px 12px 28px 0px;
   }
   header .header-container .header-container-inner nav {
     display: none;
@@ -280,16 +326,37 @@ footer .scroll-to-top .fa-arrow-up {
     width: 100%;
   }
   header .header-container .header-container-inner div .fa-close {
-    display: block;
     padding: 16px 17px 2px;
     font-size: 32px;
   }
   header .header-container .header-container-inner div .fa-bars {
-    display: none;
+    display: block;
+    padding: 16px 17px 2px;
+    font-size: 32px;
   }
   header .header-container .header-container-inner img {
     width: 78px;
     margin-left: 18px;
+  }
+  .header-navbar-popup {
+    top: 43px;
+  }
+  .header-navbar-popup a {
+    font: 500 18px/22px var(--font-1);
+  }
+  .header-navbar-popup .language-navbar {
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
+    margin-top: 49px;
+  }
+  .header-navbar-popup .link-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 43px;
+    gap: 42px;
   }
   footer {
     z-index: 2;
