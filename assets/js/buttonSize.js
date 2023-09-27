@@ -23,3 +23,18 @@ updateButtonSize();
 
 window.addEventListener('resize', updateButtonSize);
 
+function playVideo() {
+  const videoOverlay = document.querySelector('.video-overlay');
+  const youtubeVideo = document.getElementById('youtubeVideo');
+
+  // Show the video overlay
+  videoOverlay.style.display = 'block';
+
+  // Create and append the YouTube iframe
+  const iframe = document.createElement('iframe');
+  iframe.classList.add('video-iframe');
+  iframe.setAttribute('src', 'https://www.youtube.com/embed/' + youtubeVideo.getAttribute('data-video-id'));
+  youtubeVideo.appendChild(iframe);
+}
+
+

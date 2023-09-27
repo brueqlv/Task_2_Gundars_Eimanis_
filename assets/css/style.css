@@ -57,6 +57,10 @@ main .video-container {
   max-width: 1366px;
   padding-top: 47px;
 }
+main .video-container img {
+  max-width: 100%;
+  height: auto;
+}
 main .video-container button {
   transition: background-color 0.3s ease, transform 0.3s ease;
   background-color: var(--button-color);
@@ -78,6 +82,19 @@ main .video-container button:hover, main .video-container button:focus {
 main .video-container button i {
   padding: 0 0 0 4px;
   height: auto;
+}
+main .video-container .video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+main .video-container .video-iframe {
+  width: 100%;
+  height: 100%;
 }
 main .text-container {
   max-width: 654px;
