@@ -5,12 +5,14 @@ const innerContainers = document.querySelectorAll('.inner-container');
 innerContainers.forEach(container => {
   const photo = container.querySelector('.photo');
   const name = container.querySelector('.name');
+  const surname = container.querySelector('.surname');
   const text = container.querySelector('.text');
 
   // Check if there's a photo and hide name and text
   if (photo.getAttribute('src')) {
     console.log(1);
     name.style.display = 'none'; 
+    surname.style.display = 'none'; 
     text.style.display = 'none'; 
   }
   // Check if there's a name and hide photo and text
@@ -24,12 +26,14 @@ innerContainers.forEach(container => {
     console.log(3);
     photo.style.display = 'none'; 
     name.style.display = 'none'; 
+    surname.style.display = 'none'; 
   }
   // If none of the above, hide all
   else {
     console.log(4);
     photo.style.display = 'none'; 
     name.style.display = 'none'; 
+    surname.style.display = 'none'; 
     text.style.display = 'none'; 
   }
 });
@@ -81,3 +85,67 @@ updateVisibility();
 
 // Listen for window resize events to update visibility
 window.addEventListener('resize', updateVisibility);
+
+
+// Function to open the popup
+// Function to open the YouTube video in a popup
+function openPopup(videoId, name, surname) {
+    const popupOverlay = document.getElementById('popupOverlay');
+    const popupName = document.getElementById('popupName');
+    const popupSurname = document.getElementById('popupSurname');
+    const videoPlayer = document.getElementById('videoPlayer');
+
+    // Set the video URL using the video ID
+    const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+
+    // Set name and surname
+    popupName.textContent = name;
+    popupSurname.textContent = surname;
+
+    // Set the video iframe source
+    videoPlayer.src = videoUrl;
+
+    // Display the popup
+    popupOverlay.style.display = 'flex';
+}
+
+
+
+// Function to close the popup
+function closePopup() {
+    const popupOverlay = document.getElementById('popupOverlay');
+
+    // Pause the video and hide the popup
+    const videoPlayer = document.getElementById('videoPlayer');
+    videoPlayer.src = '';
+    popupOverlay.style.display = 'none';
+}
+
+// Attach click event handlers to inner-container elements
+innerContainers.forEach((container, index) => {
+    const videoLinkElement = container.querySelector('.video-link');
+    const nameElement = container.querySelector('.name');
+    const surnameElement = container.querySelector('.surname');
+    
+    // Check if the elements exist before accessing their innerText
+    const videoLink = videoLinkElement ? videoLinkElement.innerText : '';
+    const name = nameElement ? nameElement.innerText : '';
+    const surname = surnameElement ? surnameElement.innerText : '';
+    
+    container.addEventListener('click', () => {
+        // Check if there is a video ID
+        const videoId = videoLinkElement ? videoLinkElement.getAttribute('data-video-id') : '';
+        if (videoId) {
+            openPopup(videoId, name, surname);
+        }
+    });
+});
+
+
+
+popupOverlay.addEventListener('click', (event) => {
+    // Check if the click occurred outside of the actual popup content
+    if (event.target === popupOverlay) {
+      closePopup(); // Call your closePopup function
+    }
+  });

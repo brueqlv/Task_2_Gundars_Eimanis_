@@ -3,6 +3,7 @@
   --font-2: Oswald;
   --background-color-one: #2f4858;
   --background-color-two: #ffcb66;
+  --background-color-three:#FFF;
   --button-color: #ffa800;
   --button-color-hover: #ffc043;
   --font-color-one: #fff;
@@ -19,6 +20,54 @@
   font-family: Oswald;
   src: url(../font/Oswald-VariableFont_wght.ttf);
 }
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+.popup-overlay .popup {
+  padding: 20px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.popup-overlay .popup .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.popup-overlay .popup .video-container #videoPlayer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.popup-overlay .popup .video-text {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.popup-overlay .popup .video-text h5 {
+  margin: 0;
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--font-color-one);
+}
+
 main {
   display: flex;
   align-items: center;
@@ -122,6 +171,9 @@ main .story-container .inner-container .text {
   line-height: 27px;
   width: 90%;
   margin: 0;
+}
+main .story-container .inner-container .video-link {
+  display: none;
 }
 main .button-container {
   display: none;
@@ -267,6 +319,10 @@ main .sparkle-team-container .image-container .small-container::after {
   }
 }
 @media (max-width: 660px) {
+  .popup-overlay .popup .video-text h5 {
+    font-size: 24px;
+    line-height: 36px;
+  }
   main {
     padding: 20px;
   }
