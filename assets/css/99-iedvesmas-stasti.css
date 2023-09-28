@@ -175,6 +175,13 @@ main .story-container .inner-container .text {
 main .story-container .inner-container .video-link {
   display: none;
 }
+main .story-container .inner-container:hover {
+  transform: scale(1.1);
+}
+main .story-container .inner-container:hover .name, main .story-container .inner-container:hover .surname {
+  display: block;
+  z-index: 2;
+}
 main .button-container {
   display: none;
 }
