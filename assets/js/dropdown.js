@@ -50,7 +50,6 @@ function handleDropdownClick(dropdownId, e) {
                 selectedType = e.target.getAttribute('data-value');
             }
 
-            checkAndDisplayCompany();
         }
     });
 
@@ -68,15 +67,5 @@ function handleDropdownClick(dropdownId, e) {
 handleDropdownClick('city-select');
 handleDropdownClick('type-select');
 
-// Function to check selected values and update .company-container display
-function checkAndDisplayCompany() {
-    const showCompany = selectedCity === 'Riga' && selectedType === 'Edinasana';
-    const companyContainer = document.querySelector('.company-container');
 
-    if (showCompany) {
-        companyContainer.style.display = 'block';
-    } else {
-        companyContainer.style.display = 'none';
-    }
-}
 
