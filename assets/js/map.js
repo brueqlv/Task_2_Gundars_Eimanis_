@@ -45,7 +45,7 @@ function initMap() {
 
   const zoomInButton = document.getElementById('zoom-in');
   const zoomOutButton = document.getElementById('zoom-out');
-  
+
   zoomInButton.addEventListener('click', function () {
     map.setZoom(map.getZoom() + 1); 
   });
@@ -73,7 +73,7 @@ function initMap() {
           position: companyCoordinates,
           map: map,
           title: companyData.name,
-          icon: '/home/brueqlv/Task_2_Gundars_Eimanis_/assets/img/pin.svg',
+          icon: 'assets/img/pin.svg',
         });
 
         const infoWindow = new google.maps.InfoWindow({
