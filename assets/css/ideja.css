@@ -83,10 +83,8 @@ main .quote-container .quote-container-inner {
   display: flex;
   overflow: hidden;
   transition: transform 0.5s ease-in-out;
-  width: 300%;
 }
 main .quote-container .quote-container-inner .quote {
-  flex: 0 0 33.33%; /* Ensure each quote takes up the full width of the container */
   width: 600px;
 }
 main .quote-container .quote-container-inner .quote h2 {
@@ -118,8 +116,10 @@ main .quote-container .button-container .back img {
 main .quote-container .button-container .forward {
   text-align: end;
 }
-main .quote-container .button-container .forward[disabled], main .quote-container .button-container .back[disabled] {
-  opacity: 0.5; /* Reduce opacity for disabled buttons */
+main .quote-container .button-container .forward[disabled],
+main .quote-container .button-container .back[disabled] {
+  opacity: 0.5;
+  /* Reduce opacity for disabled buttons */
 }
 
 @media (max-width: 991px) {

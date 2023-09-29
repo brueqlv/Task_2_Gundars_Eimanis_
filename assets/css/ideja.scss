@@ -1,19 +1,20 @@
-
-
-main{
-    display:flex;
+main {
+    display: flex;
     align-items: center;
     flex-direction: column;
-    overflow: hidden ;
-    .text-container{
-        margin-top:172px;
-        h1{
+    overflow: hidden;
+
+    .text-container {
+        margin-top: 172px;
+
+        h1 {
             font: 500 48px/71px var(--font-2);
             text-align: center;
             letter-spacing: 0;
             color: var(--font-color-two);
         }
-        p{
+
+        p {
             font: 400 18px/22px var(--font-1);
             text-align: center;
             letter-spacing: 0;
@@ -22,15 +23,15 @@ main{
             margin-top: 60px;
         }
     }
-    
 
-    .image-container{
+
+    .image-container {
         position: relative;
         overflow: hidden;
         max-width: 1366px;
-        margin-top:135px;
+        margin-top: 135px;
 
-        .ripped{
+        .ripped {
             position: absolute;
             background-color: transparent;
             z-index: 1;
@@ -38,14 +39,17 @@ main{
             width: 100%;
             height: 55px;
         }
-        .top{
+
+        .top {
             top: 0;
             transform: rotateY(180deg);
         }
-        .bottom{
-            bottom:-1px;
+
+        .bottom {
+            bottom: -1px;
         }
-        p{
+
+        p {
             position: absolute;
             font: 500 24px/36px var(--font-2);
             text-align: center;
@@ -55,10 +59,11 @@ main{
             left: 50%;
             transform: translateX(-50%);
         }
-        .cover{
+
+        .cover {
             text-align: center;
             width: 100%;
-            max-width:1366px;
+            max-width: 1366px;
             min-width: 965px;
             position: relative;
             left: 50%;
@@ -66,7 +71,8 @@ main{
         }
 
     }
-    .image-container::after{
+
+    .image-container::after {
         content: "";
         position: absolute;
         top: 0;
@@ -74,39 +80,42 @@ main{
         width: 100%;
         height: 100%;
         background: linear-gradient(1deg, rgba(47, 72, 88, 0.8) 18.63%, rgba(47, 72, 88, 0) 49.21%);
-        mix-blend-mode: overlay; 
+        mix-blend-mode: overlay;
         pointer-events: none;
     }
 
 
-    .quote-container{
-        margin:125px 0 175px 0;
-        max-width:579px;
-        overflow:hidden;
-        position:relative;
+    .quote-container {
+        margin: 125px 0 175px 0;
+        max-width: 579px;
+        overflow: hidden;
+        position: relative;
         width: 100%;
-        .quote-container-inner{
-            display:flex;
+
+        .quote-container-inner {
+            display: flex;
             overflow: hidden;
-            transition:transform 0.5s ease-in-out;
-            width:300%;
-            .quote{
-                flex: 0 0 33.33%; /* Ensure each quote takes up the full width of the container */
-                
+            transition: transform 0.5s ease-in-out;
+
+            .quote {
+
                 width: 600px;
-                h2{
+
+                h2 {
                     font: 500 24px/36px var(--font-2);
                     text-align: left;
                     color: var(--font-color-two);
                     margin-bottom: 0;
                 }
-                h3{
+
+                h3 {
                     font: 400 18px/22px var(--font-1);
                     text-align: left;
                     color: var(--font-color-two);
                     margin: 8px 0 35px 0;
                 }
-                p{
+
+                p {
                     font: italic 400 24px/29px var(--font-1);
                     text-align: left;
                     color: var(--font-color-two);
@@ -115,23 +124,28 @@ main{
             }
         }
 
-        .button-container{
-            button{
-                all:unset;
-                width:35px;
+        .button-container {
+            button {
+                all: unset;
+                width: 35px;
                 opacity: 0.7;
             }
-            .back{
-                img{
+
+            .back {
+                img {
                     transform: rotate(180deg);
                 }
             }
-            .forward{
+
+            .forward {
                 text-align: end;
 
             }
-            .forward[disabled], .back[disabled] {
-                opacity: 0.5; /* Reduce opacity for disabled buttons */
+
+            .forward[disabled],
+            .back[disabled] {
+                opacity: 0.5;
+                /* Reduce opacity for disabled buttons */
             }
 
         }
@@ -139,87 +153,103 @@ main{
     }
 }
 
-@media (max-width:991px){
-    main{
+@media (max-width:991px) {
+    main {
         text-align: center;
-        .text-container{
-            margin-top:135px;
 
-            p{
+        .text-container {
+            margin-top: 135px;
+
+            p {
                 margin-top: 50px;
             }
         }
-        .image-container{
-            p{
-                width:60%;
-                bottom:8%;
-                transform:translate(-49%,0);
+
+        .image-container {
+            p {
+                width: 60%;
+                bottom: 8%;
+                transform: translate(-49%, 0);
             }
-            .cover{
-                width:100%;
+
+            .cover {
+                width: 100%;
             }
         }
-        .quote-container{
+
+        .quote-container {
             margin: 124px 0 155px 0;
-            .button-container{
+
+            .button-container {
                 text-align: left;
-                button{
-                    width:45px;
+
+                button {
+                    width: 45px;
                 }
             }
         }
     }
 }
-@media (max-width: 660px){
-    main{
-        .text-container{
-            display:flex;
+
+@media (max-width: 660px) {
+    main {
+        .text-container {
+            display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top:80px;
-            h1{
+            margin-top: 80px;
+
+            h1 {
                 font-size: 36px;
                 line-height: 53px;
             }
-            p{
+
+            p {
                 font-size: 12px;
                 line-height: 15px;
-                width:88%;
-                margin-top:1px;
+                width: 88%;
+                margin-top: 1px;
             }
         }
-        .image-container{
-            margin-top:70px;
-            p{
-                font-size:18px;
+
+        .image-container {
+            margin-top: 70px;
+
+            p {
+                font-size: 18px;
                 line-height: 27px;
-                width:29.3%;
-                bottom:10%;
-                transform:translate(-50%,0);
+                width: 29.3%;
+                bottom: 10%;
+                transform: translate(-50%, 0);
             }
-            .cover{
+
+            .cover {
                 left: 39%;
                 transform: translateX(-50%);
                 min-width: 945px;
             }
         }
-        .quote-container{
+
+        .quote-container {
             margin: 96px 0 135px 0;
-            max-width:88%;
-            .quote-container-inner{
-                .quote{
-                    h2{
-                        font-weight:500;
-                        font-size:18px;
+            max-width: 88%;
+
+            .quote-container-inner {
+                .quote {
+                    h2 {
+                        font-weight: 500;
+                        font-size: 18px;
                         line-height: 27px;
                     }
-                    h3{
-                        margin:14px 0 25px 0;
+
+                    h3 {
+                        margin: 14px 0 25px 0;
                         font-size: 14px;
                         font-weight: 400;
                         line-height: 17px;
                     }
-                    p{
+
+                    p {
                         font-size: 12px;
                         font-weight: 400;
                         line-height: 15px;
@@ -227,9 +257,10 @@ main{
                 }
 
             }
-            .button-container{
-                button{
-                    width:36px;
+
+            .button-container {
+                button {
+                    width: 36px;
                 }
             }
         }
