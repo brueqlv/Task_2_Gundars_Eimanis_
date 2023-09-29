@@ -22,36 +22,29 @@ function handleDropdownClick(dropdownId, e) {
     });
 
     dropdown.querySelector('.dropdown').addEventListener('click', function (e) {
-        if (e.target !== defaultOption) {
+        if (e.target.tagName === 'LI' && e.target !== defaultOption) {
             if (currentSelection) {
                 currentSelection.style.display = 'block'; 
             }
-
+    
             selectedValue.textContent = e.target.textContent;
             dropdown.querySelector('.dropdown').classList.remove('open');
             selectedValue.classList.remove('no-border-radius');
-
-            // Hide the selected item in the dropdown
+    
             e.target.style.display = 'none';
             currentSelection = e.target;
-
+    
             const allOptions = dropdown.querySelectorAll('.dropdown li');
             allOptions.forEach(option => {
                 if (option !== e.target) {
-                    option.classList.remove('selected');
+                    option.style.display = 'block';
                 }
             });
-
+    
             selectedValue.classList.add('selected');
-
-            if (dropdownId === 'city-select') {
-                selectedCity = e.target.getAttribute('data-value');
-            } else if (dropdownId === 'type-select') {
-                selectedType = e.target.getAttribute('data-value');
-            }
-
         }
     });
+    
 
     // Close the dropdown when clicking outside
     document.addEventListener('click', function (e) {

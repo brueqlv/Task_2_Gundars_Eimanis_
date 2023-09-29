@@ -140,22 +140,23 @@ main .search-container .select-wrapper .no-border-radius {
   border-bottom-right-radius: 0;
 }
 main .company-container {
-  display: block;
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   max-width: 1366;
   margin-bottom: 40px;
 }
 main .company-container .inner-container {
   justify-content: space-between;
   align-items: center;
-  width: 87%;
+  width: 60%;
   min-height: 135px;
   display: none;
 }
 main .company-container .inner-container img {
   width: 120px;
   box-sizing: border-box;
-  margin-left: 132px;
   margin-bottom: 15px;
 }
 main .company-container .inner-container h3 {
@@ -180,13 +181,16 @@ main .company-container .inner-container p {
   width: 255px;
   margin: 0;
 }
+main .company-container .inner-container .type, main .company-container .inner-container .city {
+  display: none;
+}
 main .map-container {
   width: 100%;
   max-width: 1383px;
   height: 648px;
   position: relative;
 }
-main .map-container .inner-container {
+main .map-container .map-inner-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -273,12 +277,34 @@ main .map-container #zoom-out {
     margin-top: 50px;
   }
   main .search-container {
-    margin-bottom: 65px;
+    margin-bottom: 163px;
   }
-  main .map-container {
+  main .company-container {
+    margin-bottom: 46px;
+  }
+  main .company-container .inner-container {
+    justify-content: flex-start;
+    width: 79%;
+    min-height: 120px;
+  }
+  main .company-container .inner-container div {
+    margin-left: auto;
+  }
+  main .company-container .inner-container img {
+    width: 98px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  main .company-container .inner-container h3 {
+    margin-left: 29px;
+  }
+  main .company-container .inner-container p {
+    width: auto;
+  }
+  main .company-container .map-container {
     height: 812px;
   }
-  main .map-container #zoom-in, main .map-container #zoom-out {
+  main .company-container .map-container #zoom-in, main .company-container .map-container #zoom-out {
     display: none;
   }
 }
@@ -324,6 +350,9 @@ main .map-container #zoom-out {
   }
   main .search-container .custom-select .select-wrapper .arrow {
     top: 64%;
+  }
+  main .company-container {
+    display: none;
   }
   main .map-container {
     width: 100vw;

@@ -10,8 +10,7 @@ function extractCompanyData(companyElement) {
   const phoneNumber = companyElement.querySelector('.phone-number').textContent;
   const city = companyElement.querySelector('.city').textContent;
   const address = companyElement.querySelector('.address').textContent;
-
-  return {
+    return {
     id: companyId,
     name: name,
     type: type,
