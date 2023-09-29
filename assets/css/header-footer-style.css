@@ -86,7 +86,7 @@ header .header-container .header-container-inner nav .language-link {
 }
 
 .header-navbar-popup {
-  position: absolute;
+  position: fixed;
   top: 81px;
   left: 0;
   background: var(--background-color-three);

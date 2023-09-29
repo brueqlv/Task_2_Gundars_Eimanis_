@@ -41,6 +41,19 @@ function initMap() {
     disableDefaultUI: true,
   });
 
+  //For custom zoom  buttons
+
+  const zoomInButton = document.getElementById('zoom-in');
+  const zoomOutButton = document.getElementById('zoom-out');
+  
+  zoomInButton.addEventListener('click', function () {
+    map.setZoom(map.getZoom() + 1); 
+  });
+
+  zoomOutButton.addEventListener('click', function () {
+    map.setZoom(map.getZoom() - 1); 
+  });
+
   map.addListener('click', function(event) {
     event.stop(); 
   });

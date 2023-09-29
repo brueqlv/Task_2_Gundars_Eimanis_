@@ -62,7 +62,7 @@ main{
                 position: absolute;
                 top: 100%;
                 left: 0;
-                background: #C4C4C466;
+                background: #e9e9e9;
                 width:100%;
                 display: none;
                 border-bottom-left-radius: 6px;
@@ -86,7 +86,7 @@ main{
 
                       /* Style the selected value */
           .selected-value {
-            background: #C4C4C466;
+            background: #e9e9e9;
             height:25px;
             border-radius: 6px;
             padding: 9px 15px;
@@ -169,17 +169,41 @@ main{
         width:100%;
         max-width: 1383px;
         height:648px;
+        position:relative;
+        .inner-container{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+        }
         iframe{
             width:100%;
             height:100%;
         }
-        #custom-zoom-in,
-        #custom-zoom-out {
+        #zoom-in,
+        #zoom-out {
+            border:none;
+            padding:0;
             width:50px;
             height:50px;
             display:block;
             z-index: 10;
+            position:absolute;
+            right:3%;
+            img{
+                width:100%;
+                height:100%;
+            }
         }
+        #zoom-in{
+
+            bottom:20%;
+        }
+        #zoom-out{
+            bottom:10%;
+        }
+
     }
 }
 .gm-style-iw-d{
@@ -245,6 +269,10 @@ main{
         }
         .map-container{
             height:812px;
+
+            #zoom-in, #zoom-out{
+                display: none;
+            }
         }
     }
 }
@@ -299,5 +327,27 @@ main{
             width:100vw;
             height:606px;
         }
+    }
+    .custom-info-window{
+        flex-direction: column;
+        padding:10px;
+        gap:20px;
+    
+        img{
+            width:120px;
+            height:auto;
+        }
+        div{
+    
+            h3{
+                font-size: 18px;
+                line-height: 27px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        
     }
 }
