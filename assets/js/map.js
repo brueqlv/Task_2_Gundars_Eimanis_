@@ -143,7 +143,7 @@ function updateMap(selectedCity, selectedType) {
                 position: companyCoordinates,
                 map: map,
                 title: companyData.name,
-                icon: '/home/brueqlv/Task_2_Gundars_Eimanis_/assets/img/pin.svg',
+                icon: 'assets/img/pin.svg',
               });
 
               const infoWindow = new google.maps.InfoWindow({
