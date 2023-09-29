@@ -2,14 +2,14 @@
 
 const parentElement = document.querySelector('.video-container');
 const playButton = document.querySelector('.play-button');
-const icon = document.querySelector('.fa-play'); 
+const icon = document.querySelector('.fa-play');
 
 function updateButtonSize() {
   const parentWidth = parentElement.offsetWidth;
-  const buttonWidthPercentage = 15; 
+  const buttonWidthPercentage = 15;
 
   const buttonWidth = (parentWidth * buttonWidthPercentage) / 100;
-  const buttonHeight = buttonWidth; 
+  const buttonHeight = buttonWidth;
 
   playButton.style.width = `${buttonWidth}px`;
   playButton.style.height = `${buttonHeight}px`;

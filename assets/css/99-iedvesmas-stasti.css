@@ -3,7 +3,7 @@
   --font-2: Oswald;
   --background-color-one: #2f4858;
   --background-color-two: #ffcb66;
-  --background-color-three:#FFF;
+  --background-color-three: #FFF;
   --button-color: #ffa800;
   --button-color-hover: #ffc043;
   --font-color-one: #fff;
@@ -20,6 +20,7 @@
   font-family: Oswald;
   src: url(../font/Oswald-VariableFont_wght.ttf);
 }
+/* Styling for video popup */
 .popup-overlay {
   display: none;
   position: fixed;
@@ -59,20 +60,20 @@
 }
 .popup-overlay .popup .video-text h5 {
   margin: 0;
-  font-family: Oswald;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 53px;
-  letter-spacing: 0em;
+  font: 500 36px/53px var(--font-2);
   text-align: center;
   color: var(--font-color-one);
 }
 
+/* Main styling */
 main {
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  /* Story container styling */
+  /* Button container styling */
+  /* Sparkle team container styling */
 }
 main .text-container {
   margin-top: 172px;
@@ -103,7 +104,6 @@ main .story-container .inner-container {
   width: 160px;
   height: 160px;
   overflow: hidden;
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
@@ -115,18 +115,14 @@ main .story-container .inner-container .background {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/color-1845394.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("../img/color-1845394.jpg") center/cover no-repeat;
   z-index: -1;
 }
 main .story-container .inner-container .number {
   position: absolute;
   bottom: -5px;
   right: 15px;
-  font-family: var(--font-2);
-  font-size: 36px;
-  font-weight: 700;
+  font: 700 36px var(--font-2);
   color: var(--font-color-one);
   margin: 0;
   z-index: 1;
@@ -141,15 +137,13 @@ main .story-container .inner-container .photo {
      object-fit: cover;
   opacity: 0.5;
 }
-main .story-container .inner-container .name, main .story-container .inner-container .surname {
+main .story-container .inner-container .name,
+main .story-container .inner-container .surname {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--font-color-one);
-  font-family: var(--font-2);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
+  font: 700 24px/36px var(--font-2);
   margin: 0;
 }
 main .story-container .inner-container .name {
@@ -160,15 +154,12 @@ main .story-container .inner-container .surname {
 }
 main .story-container .inner-container .text {
   position: absolute;
-  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--font-color-one);
-  font-family: var(--font-2);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
+  font: 700 18px/27px var(--font-2);
+  text-align: center;
   width: 90%;
   margin: 0;
 }
@@ -177,8 +168,10 @@ main .story-container .inner-container .video-link {
 }
 main .story-container .inner-container:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
-main .story-container .inner-container:hover .name, main .story-container .inner-container:hover .surname {
+main .story-container .inner-container:hover .name,
+main .story-container .inner-container:hover .surname {
   display: block;
   z-index: 2;
 }
@@ -196,21 +189,13 @@ main .sparkle-team-container {
 }
 main .sparkle-team-container h2 {
   margin: 0;
-  font-family: var(--font-2);
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 44px;
-  letter-spacing: 0em;
+  font: 500 30px/44px var(--font-2);
   text-align: center;
   color: var(--font-color-two);
 }
 main .sparkle-team-container p {
-  margin: 20px 0 0 0;
-  font-family: var(--font-1);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0em;
+  margin-top: 20px;
+  font: 500 18px/22px var(--font-1);
   text-align: center;
   color: var(--font-color-two);
   max-width: 606px;
@@ -238,18 +223,12 @@ main .sparkle-team-container .image-container .small-container div {
   width: 100%;
 }
 main .sparkle-team-container .image-container .small-container div h5 {
-  font-family: var(--font-2);
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font: 500 24px/36px var(--font-2);
   color: var(--font-color-one);
   margin: 0 10px 0 0;
 }
 main .sparkle-team-container .image-container .small-container div p {
-  font-family: var(--font-1);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  font: 500 18px/22px var(--font-1);
   text-align: center;
   color: var(--font-color-one);
   margin: 0 0 20px 0;

@@ -1,8 +1,12 @@
+/* Main styling */
 main {
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  /* Text container styling */
+  /* Image container styling */
+  /* Quote container styling */
 }
 main .text-container {
   margin-top: 172px;
@@ -119,7 +123,6 @@ main .quote-container .button-container .forward {
 main .quote-container .button-container .forward[disabled],
 main .quote-container .button-container .back[disabled] {
   opacity: 0.5;
-  /* Reduce opacity for disabled buttons */
 }
 
 @media (max-width: 991px) {

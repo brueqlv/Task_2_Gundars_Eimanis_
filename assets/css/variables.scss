@@ -1,43 +1,44 @@
 :root {
-    --font-1: Montserrat;
-    --font-2: Oswald;
-    --background-color-one: #2f4858;
-    --background-color-two: #ffcb66;
-    --background-color-three:#FFF;
-    --button-color: #ffa800;
-    --button-color-hover: #ffc043;
-    --font-color-one: #fff;
-    --font-color-two: #2f4858;
-    --font-color-three: #ffa800;
-    --icon-color-one: #000000;
+  --font-1: Montserrat;
+  --font-2: Oswald;
+  --background-color-one: #2f4858;
+  --background-color-two: #ffcb66;
+  --background-color-three: #FFF;
+  --button-color: #ffa800;
+  --button-color-hover: #ffc043;
+  --font-color-one: #fff;
+  --font-color-two: #2f4858;
+  --font-color-three: #ffa800;
+  --icon-color-one: #000000;
+}
+
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(../font/Oswald-VariableFont_wght.ttf);
+}
+
+@mixin custom-text-styles-one {
+  font-family: var(--font-1);
+  font-weight: 500;
+  color: var(--font-color-one);
+}
+
+@mixin custom-button-style {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: var(--button-color);
+  color: var(--font-color-one);
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color-hover);
   }
-  
-  
-  @font-face {
-    font-family: Montserrat;
-    src: url(../font/Montserrat-VariableFont_wght.ttf);
-  }
-  
-  @font-face {
-    font-family: Oswald;
-    src: url(../font/Oswald-VariableFont_wght.ttf);
-  }
-  @mixin custom-text-styles-one {
-    font-family: var(--font-1);
-    font-weight: 500;
-    color: var(--font-color-one);
-  }
-  @mixin custom-button-style {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    background-color: var(--button-color);
-    color: var(--font-color-one);
-    border-radius: 50%;
-    border: 0;
-    cursor: pointer;
-  
-    &:hover,
-    &:focus {
-      background-color: var(--button-color-hover);
-    }
-  }
-  
+}

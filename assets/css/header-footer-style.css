@@ -3,7 +3,7 @@
   --font-2: Oswald;
   --background-color-one: #2f4858;
   --background-color-two: #ffcb66;
-  --background-color-three:#FFF;
+  --background-color-three: #FFF;
   --button-color: #ffa800;
   --button-color-hover: #ffc043;
   --font-color-one: #fff;
@@ -85,6 +85,7 @@ header .header-container .header-container-inner nav .language-link {
   margin-left: 24px;
 }
 
+/* Styling for navigation popup */
 .header-navbar-popup {
   position: fixed;
   top: 81px;
@@ -127,6 +128,7 @@ header .header-container .header-container-inner nav .language-link {
   gap: 74px;
 }
 
+/* Footer styling */
 footer {
   background: var(--background-color-one);
   padding: 36px 62px 0;
@@ -277,7 +279,8 @@ footer .scroll-to-top .fa-arrow-up {
   footer .footer-top-container .hide-on-tablet {
     display: none;
   }
-  footer .footer-top-container .show-on-phone, footer .footer-top-container .show-on-tablet-phone {
+  footer .footer-top-container .show-on-phone,
+  footer .footer-top-container .show-on-tablet-phone {
     display: block;
   }
   footer .footer-top-container .top-container-inner a {

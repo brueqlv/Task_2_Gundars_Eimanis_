@@ -3,7 +3,7 @@
   --font-2: Oswald;
   --background-color-one: #2f4858;
   --background-color-two: #ffcb66;
-  --background-color-three:#FFF;
+  --background-color-three: #FFF;
   --button-color: #ffa800;
   --button-color-hover: #ffc043;
   --font-color-one: #fff;
@@ -20,11 +20,16 @@
   font-family: Oswald;
   src: url(../font/Oswald-VariableFont_wght.ttf);
 }
+/* Main styling */
 main {
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  /* Text container styling */
+  /* Search container styling */
+  /* Company container styling */
+  /* Map container styling */
 }
 main .text-container {
   margin-top: 172px;
@@ -48,8 +53,7 @@ main .search-container {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 75px;
-  margin-bottom: 218px;
+  margin: 75px 0 218px;
 }
 main .search-container .custom-select {
   position: relative;
@@ -57,11 +61,7 @@ main .search-container .custom-select {
   font-size: 16px;
 }
 main .search-container .custom-select label {
-  font-family: var(--font-1);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: -0.015em;
+  font: 500 18px/-0.015em var(--font-1);
   text-align: left;
   color: var(--font-color-three);
 }
@@ -92,10 +92,7 @@ main .search-container .select-wrapper .dropdown {
   z-index: 1;
 }
 main .search-container .select-wrapper .dropdown li {
-  font-family: var(--font-1);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
+  font: 400 18px/22px var(--font-1);
   letter-spacing: -0.015em;
   text-align: left;
   color: var(--font-color-two);
@@ -109,10 +106,7 @@ main .search-container .select-wrapper .selected-value {
   height: 25px;
   border-radius: 6px;
   padding: 9px 15px;
-  font-family: var(--font-1);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
+  font: 400 18px/22px var(--font-1);
   letter-spacing: -0.015em;
   text-align: left;
   color: var(--font-color-two);
@@ -160,10 +154,7 @@ main .company-container .inner-container img {
   margin-bottom: 15px;
 }
 main .company-container .inner-container h3 {
-  font-family: var(--font-1);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 29px;
+  font: 500 24px/29px var(--font-1);
   letter-spacing: 0em;
   text-align: left;
   color: var(--font-color-two);
@@ -171,17 +162,15 @@ main .company-container .inner-container h3 {
   margin: 0;
 }
 main .company-container .inner-container p {
-  font-family: var(--font-1);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
+  font: 400px 18px/22px var(--font-1);
   letter-spacing: 0em;
   text-align: right;
   color: var(--font-color-two);
   width: 255px;
   margin: 0;
 }
-main .company-container .inner-container .type, main .company-container .inner-container .city {
+main .company-container .inner-container .type,
+main .company-container .inner-container .city {
   display: none;
 }
 main .map-container {
@@ -224,6 +213,7 @@ main .map-container #zoom-out {
   bottom: 10%;
 }
 
+/* Styling for maps custom info field */
 .gm-style-iw-d {
   overflow: hidden !important;
 }
@@ -250,19 +240,13 @@ main .map-container #zoom-out {
   justify-content: space-between;
 }
 .custom-info-window div h3 {
-  font-family: var(--font-2);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 36px;
+  font: 500 24px/36px var(--font-2);
   text-align: right;
   color: var(--font-color-two);
   margin: 0;
 }
 .custom-info-window div p {
-  font-family: var(--font-1);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
+  font: 400 18px/22px var(--font-1);
   text-align: right;
   color: var(--font-color-two);
   margin: 0;
@@ -304,7 +288,8 @@ main .map-container #zoom-out {
   main .company-container .map-container {
     height: 812px;
   }
-  main .company-container .map-container #zoom-in, main .company-container .map-container #zoom-out {
+  main .company-container .map-container #zoom-in,
+  main .company-container .map-container #zoom-out {
     display: none;
   }
 }

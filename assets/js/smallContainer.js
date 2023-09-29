@@ -1,46 +1,42 @@
 //Function for '99 Iedvesmas stasti' pages small container content display
-
 const innerContainers = document.querySelectorAll('.inner-container');
 
 innerContainers.forEach(container => {
-  const photo = container.querySelector('.photo');
-  const name = container.querySelector('.name');
-  const surname = container.querySelector('.surname');
-  const text = container.querySelector('.text');
+    const photo = container.querySelector('.photo');
+    const name = container.querySelector('.name');
+    const surname = container.querySelector('.surname');
+    const text = container.querySelector('.text');
 
-
-
-  if (photo.getAttribute('src')) {
-    name.style.display = 'none'; 
-    surname.style.display = 'none'; 
-    text.style.display = 'none'; 
-
-    container.addEventListener('mouseover', () => {
-        name.style.display = 'block';
-        surname.style.display = 'block';
-    });
-    container.addEventListener('mouseout', () => {
+    if (photo.getAttribute('src')) {
         name.style.display = 'none';
         surname.style.display = 'none';
-    });
-  }
-  else if (name.textContent.trim() !== '') {
-    photo.style.display = 'none'; 
-    text.style.display = 'none'; 
-  }
-  else if (text && text.textContent.trim() !== '') {
-    photo.style.display = 'none'; 
-    name.style.display = 'none'; 
-    surname.style.display = 'none'; 
-  }
-  else {
-    photo.style.display = 'none'; 
-    name.style.display = 'none'; 
-    surname.style.display = 'none'; 
-    text.style.display = 'none'; 
-  }
-});
+        text.style.display = 'none';
 
+        container.addEventListener('mouseover', () => {
+            name.style.display = 'block';
+            surname.style.display = 'block';
+        });
+        container.addEventListener('mouseout', () => {
+            name.style.display = 'none';
+            surname.style.display = 'none';
+        });
+    }
+    else if (name.textContent.trim() !== '') {
+        photo.style.display = 'none';
+        text.style.display = 'none';
+    }
+    else if (text && text.textContent.trim() !== '') {
+        photo.style.display = 'none';
+        name.style.display = 'none';
+        surname.style.display = 'none';
+    }
+    else {
+        photo.style.display = 'none';
+        name.style.display = 'none';
+        surname.style.display = 'none';
+        text.style.display = 'none';
+    }
+});
 
 //Function for hidding containers on smaller screens
 const button = document.querySelector('button');
@@ -81,7 +77,6 @@ updateVisibility();
 
 window.addEventListener('resize', updateVisibility);
 
-
 // Function to open the YouTube video in a popup
 function openPopup(videoId, name, surname) {
     const popupOverlay = document.getElementById('popupOverlay');
@@ -99,8 +94,6 @@ function openPopup(videoId, name, surname) {
     popupOverlay.style.display = 'flex';
 }
 
-
-
 function closePopup() {
     const popupOverlay = document.getElementById('popupOverlay');
 
@@ -113,11 +106,11 @@ innerContainers.forEach((container, index) => {
     const videoLinkElement = container.querySelector('.video-link');
     const nameElement = container.querySelector('.name');
     const surnameElement = container.querySelector('.surname');
-    
+
     const videoLink = videoLinkElement ? videoLinkElement.innerText : '';
     const name = nameElement ? nameElement.innerText : '';
     const surname = surnameElement ? surnameElement.innerText : '';
-    
+
     container.addEventListener('click', () => {
         const videoId = videoLinkElement ? videoLinkElement.getAttribute('data-video-id') : '';
         if (videoId) {
@@ -126,10 +119,8 @@ innerContainers.forEach((container, index) => {
     });
 });
 
-
-
 popupOverlay.addEventListener('click', (event) => {
     if (event.target === popupOverlay) {
-      closePopup(); 
+        closePopup();
     }
-  });
+});

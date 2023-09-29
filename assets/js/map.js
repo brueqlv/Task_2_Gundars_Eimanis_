@@ -10,7 +10,7 @@ function extractCompanyData(companyElement) {
   const phoneNumber = companyElement.querySelector('.phone-number').textContent;
   const city = companyElement.querySelector('.city').textContent;
   const address = companyElement.querySelector('.address').textContent;
-    return {
+  return {
     id: companyId,
     name: name,
     type: type,
@@ -46,15 +46,15 @@ function initMap() {
   const zoomOutButton = document.getElementById('zoom-out');
 
   zoomInButton.addEventListener('click', function () {
-    map.setZoom(map.getZoom() + 1); 
+    map.setZoom(map.getZoom() + 1);
   });
 
   zoomOutButton.addEventListener('click', function () {
-    map.setZoom(map.getZoom() - 1); 
+    map.setZoom(map.getZoom() - 1);
   });
 
-  map.addListener('click', function(event) {
-    event.stop(); 
+  map.addListener('click', function (event) {
+    event.stop();
   });
 
   // Create markers and InfoWindows for each company
@@ -110,7 +110,7 @@ function updateMap(selectedCity, selectedType) {
   });
 
   if (selectedCity === "Izvēlies") {
-    selectedCity = 'Rīga'; 
+    selectedCity = 'Rīga';
   }
 
 
@@ -124,12 +124,12 @@ function updateMap(selectedCity, selectedType) {
       companyContainers.forEach(companyElement => {
         const companyData = extractCompanyData(companyElement);
 
-        
+
         companyElement.style.display = 'none';
 
         if ((((selectedType === "Izvēlies" || companyData.type === selectedType) &&
-            companyData.city === selectedCity)) || (((selectedCity === "Izvēlies" || companyData.city === selectedCity) &&
-            companyData.type === selectedType))){
+          companyData.city === selectedCity)) || (((selectedCity === "Izvēlies" || companyData.city === selectedCity) &&
+            companyData.type === selectedType))) {
           const geocoder = new google.maps.Geocoder();
 
           companyElement.style.display = 'flex';
@@ -157,15 +157,15 @@ function updateMap(selectedCity, selectedType) {
               </div>
                 `,
               });
-      
+
               marker.addListener('click', () => {
                 infoWindows.forEach(infoWin => {
                   infoWin.close();
                 });
-      
+
                 infoWindow.open(map, marker);
               });
-      
+
               markers.push(marker);
               infoWindows.push(infoWindow);
 
@@ -196,7 +196,7 @@ cityDropdown.addEventListener('click', function (e) {
 typeDropdown.addEventListener('click', function (e) {
   if (e.target.tagName === 'LI') {
     const selectedType = e.target.textContent;
-    const selectedCity = cityDropdown.querySelector('.selected-value').textContent; 
+    const selectedCity = cityDropdown.querySelector('.selected-value').textContent;
 
     console.log(selectedType);
     console.log(selectedCity);
@@ -204,7 +204,7 @@ typeDropdown.addEventListener('click', function (e) {
   }
 });
 
-
+//For styling map gray
 const grayscaleMapStyle = [
   {
     featureType: 'landscape',
@@ -221,10 +221,10 @@ const grayscaleMapStyle = [
     featureType: 'poi',
     stylers: [
       {
-        saturation: -100, 
+        saturation: -100,
       },
       {
-        lightness: 50, 
+        lightness: 50,
       },
       {
         visibility: 'off',
@@ -235,10 +235,10 @@ const grayscaleMapStyle = [
     featureType: 'road.highway',
     stylers: [
       {
-        saturation: -100, 
+        saturation: -100,
       },
       {
-        lightness: 75, 
+        lightness: 75,
       },
     ],
   },
@@ -246,7 +246,7 @@ const grayscaleMapStyle = [
     featureType: 'road.arterial',
     stylers: [
       {
-        saturation: -100, 
+        saturation: -100,
       },
       {
         lightness: 75,
@@ -257,10 +257,10 @@ const grayscaleMapStyle = [
     featureType: 'road.local',
     stylers: [
       {
-        saturation: -100, 
+        saturation: -100,
       },
       {
-        lightness: 75, 
+        lightness: 75,
       },
     ],
   },
@@ -268,10 +268,10 @@ const grayscaleMapStyle = [
     featureType: 'transit',
     stylers: [
       {
-        saturation: -100, 
+        saturation: -100,
       },
       {
-        lightness: 10, 
+        lightness: 10,
       },
     ],
   },
@@ -280,7 +280,7 @@ const grayscaleMapStyle = [
     elementType: 'labels.text.fill',
     stylers: [
       {
-        color: '#9e9e9e', 
+        color: '#9e9e9e',
       },
     ],
   },

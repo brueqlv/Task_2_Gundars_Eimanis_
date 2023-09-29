@@ -1,241 +1,260 @@
 @import 'variables';
 
-main{
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden ;
-    .text-container{
-        margin-top:172px;
-        h1{
-            font: 500 48px/71px var(--font-2);
-            text-align: center;
-            letter-spacing: 0;
-            color: var(--font-color-two);
-        }
-        p{
-            font: 400 18px/22px var(--font-1);
-            text-align: center;
-            color: var(--font-color-two);
-            max-width: 816px;
-            margin-top: 60px;
-        }
+/* Main styling */
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  /* Text container styling */
+  .text-container {
+    margin-top: 172px;
+
+    h1 {
+      font: 500 48px/71px var(--font-2);
+      text-align: center;
+      letter-spacing: 0;
+      color: var(--font-color-two);
     }
-    form{
-        max-width: 612px;
-        margin:140px 0 185px 0;
-    
-        h2 {
-          font: 500 30px/44px var(--font-2);
-          text-align: center;
+
+    p {
+      font: 400 18px/22px var(--font-1);
+      text-align: center;
+      color: var(--font-color-two);
+      max-width: 816px;
+      margin-top: 60px;
+    }
+  }
+
+  /* Form container styling */
+  form {
+    max-width: 612px;
+    margin: 140px 0 185px 0;
+
+    h2 {
+      font: 500 30px/44px var(--font-2);
+      text-align: center;
+      color: var(--font-color-two);
+      margin: 0 0 60px;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      .form-row {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+      }
+
+      .form-input {
+        border: 0;
+        width: 100%;
+        height: 43px;
+        border-radius: 6px;
+        background: #c4c4c466;
+        text-align: left;
+        margin-bottom: 15px;
+        padding: 10px 0 0 10px;
+        box-sizing: border-box;
+      }
+
+      .form-input:focus {
+        border: 2px solid var(--background-color-two);
+      }
+
+      .input-container {
+        width: 100%;
+
+        textarea {
+          height: 232px;
+          padding: 12px 0 0 10px;
+          margin-bottom: 23px;
+        }
+
+        label {
+          font: 400 14px/17px var(--font-1);
+          text-align: left;
           color: var(--font-color-two);
-          margin: 0 0 60px;
         }
-    
-        .form-container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: flex-start;
-    
-          .form-row {
-            display: flex;
-            width: 100%;
-            gap: 20px;
-          }
-    
-          .form-input {
-            border: 0;
-            width: 100%;
-            height: 43px;
-            border-radius: 6px;
-            background: #c4c4c466;
-            text-align: left;
-            margin-bottom: 15px;
-            padding:10px 0 0 10px;
-            box-sizing: border-box;
-          }
-    
-          .form-input:focus {
-            border: 2px solid var(--background-color-two);
-          }
-    
-          .input-container {
-            width: 100%;
-    
-            textarea {
-              height: 232px;
-              padding: 12px 0 0 10px;
-              margin-bottom: 23px;
-            }
-    
-            label {
-              font: 400 14px/17px var(--font-1);
-              text-align: left;
-              color: var(--font-color-two);
-            }
-          }
-    
-          .checkbox-container {
-            display: flex;
-            align-items: flex-start;
-            margin-top: 33px;
-    
-            input[type="checkbox"] {
-              margin-right: 25px;
-              width: 16px;
-              height: 16px;
-              border-radius: 3px;
-              background-color: #e7e7e7;
-            }
-    
-            label {
-              font: 400 14px/17px var(--font-1);
-              text-align: left;
-              color: var(--font-color-two);
-            }
-          }
-    
-          button {
-            @include custom-button-style();
-            text-align: left;
-            margin-top: 55px;
-            width: 182px;
-            height: 62px;
-            border-radius: 31px;
-            font: 500 24px/22px var(--font-1);
-            text-align: center;
-          }
-    
-          input::placeholder,
-          textarea::placeholder {
-            font: 400 18px/22px var(--font-1);
-            letter-spacing: -0.015em;
-            color: var(--font-color-two);
-          }
-        }
-    }
-}
-@media (max-width: 991px){
-    main{
-        padding:0 70px;
-        .text-container{
-            margin-top:135px;
-            p{
-                max-width: 600px;
-                margin-top: 50px;
-            }
+      }
+
+      .checkbox-container {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 33px;
+
+        input[type="checkbox"] {
+          margin-right: 25px;
+          width: 16px;
+          height: 16px;
+          border-radius: 3px;
+          background-color: #e7e7e7;
         }
 
-        form {
-            margin:136px 0 165px 0;
-            h2 {
-              margin-bottom: 92px;
-            }
-      
-            .form-container {
-              .form-input {
-                height: 40px;
-              }
-      
-              .input-container {
-                textarea {
-                  height: 230px;
-                  margin-bottom:12px;
-                }
-              }
-      
-              .checkbox-container {
-                margin-top: 10px;
-      
-                input[type="checkbox"] {
-                  margin-right: 30px;
-                }
-              }
-            }
+        label {
+          font: 400 14px/17px var(--font-1);
+          text-align: left;
+          color: var(--font-color-two);
         }
+      }
+
+      button {
+        @include custom-button-style();
+        text-align: left;
+        margin-top: 55px;
+        width: 182px;
+        height: 62px;
+        border-radius: 31px;
+        font: 500 24px/22px var(--font-1);
+        text-align: center;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        font: 400 18px/22px var(--font-1);
+        letter-spacing: -0.015em;
+        color: var(--font-color-two);
+      }
     }
+  }
 }
 
-@media (max-width: 660px){
-    main{
-        padding:0 20px;
-        .text-container{
-            margin-top:80px;
-            h1{
-                font-size: 36px;
-                line-height: 53px;
-            }
-            p{
-                font-size: 14px;
-                line-height: 17px;
-                margin-top: 28px;
-            }
-        }
-        form {
+@media (max-width: 991px) {
+  main {
+    padding: 0 70px;
 
-            margin: 100px 0 137px 0;
-            h2 {
-              font-size: 24px;
-              margin-bottom: 25px;
-            }
-            
-      
-            .form-container {
-                padding:0px;
-              .form-row {
-                flex-direction: row;
-                flex-wrap: wrap;
-                gap: 0;
-    
-                input {
-                  &::placeholder {
-                    font-size: 14px;
-                  }
-                }
-              }
-              .form-input {
-                height: 35px;
-                margin-bottom: 10px;
-                &::placeholder {
-                  font-size: 14px;
-                }
-              }
-      
-              .input-container {
-                textarea {
-                  height: 150px;
-                  margin-bottom: 5px;
-                  
-                    &::placeholder {
-                      font-size: 14px;
-                    
-                  }
-                }
-      
-                label {
-                  font-size: 12px;
-                }
-              }
-      
-              .checkbox-container {
-                label {
-                  font-size: 12px;
-                  line-height: 15px;
-                }
-      
-                input[type="checkbox"] {
-                  margin-right: 20px;
-                }
-              }
-      
-              button {
-                width: 140px;
-                height: 48px;
-                margin-top: 55px;
-                font-size: 18px;
-              }
+    .text-container {
+      margin-top: 135px;
+
+      p {
+        max-width: 600px;
+        margin-top: 50px;
+      }
+    }
+
+    form {
+      margin: 136px 0 165px 0;
+
+      h2 {
+        margin-bottom: 92px;
+      }
+
+      .form-container {
+        .form-input {
+          height: 40px;
+        }
+
+        .input-container {
+          textarea {
+            height: 230px;
+            margin-bottom: 12px;
+          }
+        }
+
+        .checkbox-container {
+          margin-top: 10px;
+
+          input[type="checkbox"] {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  main {
+    padding: 0 20px;
+
+    .text-container {
+      margin-top: 80px;
+
+      h1 {
+        font-size: 36px;
+        line-height: 53px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 28px;
+      }
+    }
+
+    form {
+
+      margin: 100px 0 137px 0;
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+      }
+
+
+      .form-container {
+        padding: 0px;
+
+        .form-row {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 0;
+
+          input {
+            &::placeholder {
+              font-size: 14px;
             }
           }
+        }
+
+        .form-input {
+          height: 35px;
+          margin-bottom: 10px;
+
+          &::placeholder {
+            font-size: 14px;
+          }
+        }
+
+        .input-container {
+          textarea {
+            height: 150px;
+            margin-bottom: 5px;
+
+            &::placeholder {
+              font-size: 14px;
+
+            }
+          }
+
+          label {
+            font-size: 12px;
+          }
+        }
+
+        .checkbox-container {
+          label {
+            font-size: 12px;
+            line-height: 15px;
+          }
+
+          input[type="checkbox"] {
+            margin-right: 20px;
+          }
+        }
+
+        button {
+          width: 140px;
+          height: 48px;
+          margin-top: 55px;
+          font-size: 18px;
+        }
+      }
     }
-}  
+  }
+}

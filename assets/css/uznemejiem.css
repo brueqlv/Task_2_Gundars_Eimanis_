@@ -3,7 +3,7 @@
   --font-2: Oswald;
   --background-color-one: #2f4858;
   --background-color-two: #ffcb66;
-  --background-color-three:#FFF;
+  --background-color-three: #FFF;
   --button-color: #ffa800;
   --button-color-hover: #ffc043;
   --font-color-one: #fff;
@@ -20,11 +20,14 @@
   font-family: Oswald;
   src: url(../font/Oswald-VariableFont_wght.ttf);
 }
+/* Main styling */
 main {
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  /* Text container styling */
+  /* Form container styling */
 }
 main .text-container {
   margin-top: 172px;

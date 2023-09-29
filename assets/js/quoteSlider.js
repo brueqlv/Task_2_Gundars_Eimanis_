@@ -18,13 +18,12 @@ function showPreviousQuote() {
     updateQuoteDisplay();
   }
 }
-
+//Function for calculating widths of quote container based on quote count
 function updateQuoteDisplay() {
-  const quoteWidthPercentage = 100 / quotes.length; // Calculate flex percentage
+  const quoteWidthPercentage = 100 / quotes.length; 
 
-  quoteContainer.style.width = `${quotes.length * 100}%`; // Set the container width
+  quoteContainer.style.width = `${quotes.length * 100}%`; 
 
-  // Set flex value for each quote
   quotes.forEach((quote) => {
     quote.style.flex = `0 0 ${quoteWidthPercentage}%`;
   });

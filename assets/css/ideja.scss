@@ -1,9 +1,12 @@
+
+/* Main styling */
 main {
     display: flex;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
 
+    /* Text container styling */
     .text-container {
         margin-top: 172px;
 
@@ -24,7 +27,7 @@ main {
         }
     }
 
-
+    /* Image container styling */
     .image-container {
         position: relative;
         overflow: hidden;
@@ -84,7 +87,7 @@ main {
         pointer-events: none;
     }
 
-
+    /* Quote container styling */
     .quote-container {
         margin: 125px 0 175px 0;
         max-width: 579px;
@@ -145,7 +148,6 @@ main {
             .forward[disabled],
             .back[disabled] {
                 opacity: 0.5;
-                /* Reduce opacity for disabled buttons */
             }
 
         }

@@ -3,7 +3,7 @@
   --font-2: Oswald;
   --background-color-one: #2f4858;
   --background-color-two: #ffcb66;
-  --background-color-three:#FFF;
+  --background-color-three: #FFF;
   --button-color: #ffa800;
   --button-color-hover: #ffc043;
   --font-color-one: #fff;
@@ -20,11 +20,19 @@
   font-family: Oswald;
   src: url(../font/Oswald-VariableFont_wght.ttf);
 }
+/* Main styling */
 main {
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  /* Video container styling */
+  /* Purpose container styling */
+  /* Mission container styling */
+  /* Orange container styling */
+  /* Dream container styling */
+  /* Second Orange container styling */
+  /* Option container styling */
 }
 main .title-container {
   margin-top: 172px;
@@ -106,10 +114,7 @@ main .purpose-container .inner-container img {
   margin: 0 65px 0 0;
 }
 main .purpose-container .inner-container p {
-  font-family: var(--font-1);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
+  font: 400 18px/22px var(--font-1);
   text-align: left;
   max-width: 500px;
   color: var(--font-color-two);
